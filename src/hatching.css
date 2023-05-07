@@ -1,0 +1,26 @@
+.hatch {
+  background: linear-gradient(
+    -45deg,
+    currentColor,
+    currentColor 10%,
+    transparent 10%,
+    transparent 40%,
+    currentColor 40%,
+    currentColor 60%,
+    transparent 60%,
+    transparent 90%,
+    currentColor 90%
+  ),linear-gradient(
+    45deg,
+    currentColor,
+    currentColor 10%,
+    transparent 10%,
+    transparent 40%,
+    currentColor 40%,
+    currentColor 60%,
+    transparent 60%,
+    transparent 90%,
+    currentColor 90%
+  );
+  background-size: 10px 10px;
+}

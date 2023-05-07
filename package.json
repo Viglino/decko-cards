@@ -1,0 +1,39 @@
+{
+  "name": "decko-cards",
+  "version": "0.0.1",
+  "description": "Decko'Cards.",
+  "source": "./index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel --dist-dir ./.dist index.html",
+    "build": "parcel build --dist-dir ./docs ./index.html --public-url ./ --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viglino/decko-cards.git"
+  },
+  "keywords": [
+    "slideshow"
+  ],
+  "author": "Jean-Marc Viglino (https://github.com/Viglino)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Viglino/decko-cards/issues"
+  },
+  "homepage": "https://github.com/Viglino/decko-cards#,",
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "iconicss": "^0.3.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.8.3",
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "parcel-reporter-static-files-copy": "^1.5.0"
+  },
+  "staticFiles": {
+    "staticPath": "assets",
+    "watcherGlob": "**"
+  }
+}

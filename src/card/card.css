@@ -1,0 +1,43 @@
+card {
+  position: relative;
+  font-size: 1mm;
+  width: 70em;
+  height: 96em;
+  display: block;
+  border-radius: 2em;
+  overflow: hidden;
+  box-shadow: .3em .3em 1em rgba(0,0,0,.5);
+  box-sizing: border-box;
+}
+card > .border {
+  font-size: 1em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2em solid #fff;
+  box-shadow: inset 0 0 0 1px #666;
+  z-index: 999;
+  box-sizing: border-box;
+  border-radius: 2mm;
+  pointer-events: none;
+}
+
+card > * {
+  font-size: 5em;
+  position: absolute;
+  box-sizing: content-box;
+  z-index: 1;
+  overflow: hidden;
+}
+card > .centerX {
+  left: 50%;
+  transform: translateX(-50%);
+}
+card > .centerY {
+  left: 50%;
+  transform: translateY(-50%);
+}
+card > .centerX.centerY {
+  transform: translate(-50%, -50%);
+}
+
