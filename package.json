@@ -6,15 +6,17 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel --dist-dir ./.dist index.html",
-    "build": "parcel build --dist-dir ./docs ./index.html --public-url ./ --no-source-maps"
+    "start": "node prebuild.js && parcel --dist-dir ./.dist index.html",
+    "build": "node prebuild.js && parcel build --dist-dir ./docs ./index.html --public-url ./ --no-source-maps"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Viglino/decko-cards.git"
   },
   "keywords": [
-    "slideshow"
+    "deck", 
+    "cards", 
+    "creator"
   ],
   "author": "Jean-Marc Viglino (https://github.com/Viglino)",
   "license": "MIT",

@@ -37,7 +37,8 @@ main {
   padding: 7.5em 1em 0;
   max-width: 80em;
 }
-main #cards {
+
+#cards {
   position: fixed;
   left: 0;
   top: 4em;
@@ -48,7 +49,37 @@ main #cards {
   box-sizing: border-box;
   margin-bottom: 1em;
 }
-main #card {
+#cards button {
+  border: 0;
+  font-size: 3em;
+  color: #fff;
+  background-color: #f00;
+  width: 1em;
+  line-height:1em;
+  border-radius: 50%;
+  margin: .5em .2em;
+}
+#cards ul {
+  position: absolute;
+  inset: 0;
+  left: 5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cards li {
+  display: inline-block;
+  margin: .5em .1em;
+  cursor: pointer;
+}
+#cards li[data-select] {
+  box-shadow: 0 0 4px 1px red;
+}
+#cards card {
+  font-size: 1px;
+}
+
+#card {
   display: inline-block;
   vertical-align: top;
 }

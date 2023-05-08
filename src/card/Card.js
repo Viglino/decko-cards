@@ -1,9 +1,10 @@
 import '../utils/element'
 import element from '../utils/element'
 import _T from '../i18n/i18n'
+import imageDialog from '../utils/imageDialog'
 
 import './card.css'
-import templates from '../template/templates.js'
+import templates from '../template/templates'
 
 function getHTML(t) {
   return t.replace(/\n/g, '<br/>')
@@ -31,6 +32,7 @@ function calcTranform(elt, transform) {
       }
     }
   })
+  console.log(tr)
   elt.style.transform = tr.join(' ');
 }
 
@@ -57,6 +59,12 @@ class Card {
     // Set parameters
     this.show()
   }
+}
+
+Card.prototype.copy = function() {
+  const copy = element.create('CARD', { 'data-template': this.element.dataset.template })
+  copy.innerHTML = this.element.innerHTML;
+  return copy;
 }
 
 Card.prototype.show = function() {
@@ -144,10 +152,11 @@ Card.prototype.getForm = function(elt) {
     // Visible
     if (prop.hasOwnProperty('visibility')) {
       const label = element.create('LABEL', { className: 'visibility', parent: li })
-      element.create('INPUT', {
+      const vis = element.create('INPUT', {
         type: 'checkbox',
-        value: prop.visibility !== false,
+        checked: prop.visibility !== false,
         change: (e) => {
+          prop.visibility = e.target.checked;
           if (!e.target.checked) target.style.display = 'none';
           else target.style.display = '';
         },
@@ -158,7 +167,6 @@ Card.prototype.getForm = function(elt) {
     // Type
     switch (prop.type) {
       case 'text': 
-      case 'emoji': 
       case 'textarea': {
         element.create(prop.type==='textarea' ? 'TEXTAREA' : 'INPUT', {
           value: prop.value || '',
@@ -175,18 +183,23 @@ Card.prototype.getForm = function(elt) {
         break;
       }
       case 'image': {
-        element.create('INPUT', {
+        const img = element.create('INPUT', {
           type: 'url',
           className: 'image',
+          value: prop.value || '',
           change: (e) => {
             prop.value = e.target.value
             target.style.backgroundImage = 'url(' + prop.value +')'
           },
           parent: li
         })
-        element.create('button', {
+        element.create('BUTTON', {
           className: 'image',
-          change: (e) => {
+          click: () => {
+            imageDialog(url => {
+              img.value = url
+              img.dispatchEvent(new Event('change'))
+            })
           },
           parent: li
         })
@@ -241,12 +254,12 @@ Card.prototype.getForm = function(elt) {
               parent: label 
             });
             ['top', 'center', 'bottom'].forEach(p => {
-              element.create('OPTION', {
+              const option = element.create('OPTION', {
                 value: p,
                 html: _T(p),
-                selected: prop.style[s] === p,
                 parent: position
               })
+              if (prop.style[s] === p) option.selected = 'selected'
             })
             break;
           }
@@ -285,8 +298,8 @@ Card.prototype.getForm = function(elt) {
                   const angle = element.create('INPUT', {
                     type: 'range',
                     className: 'angle',
-                    min: -5,
-                    max: 5,
+                    min: -10,
+                    max: 10,
                     step: .1,
                     value: -1 * prop.style.transform[t],
                     on: {

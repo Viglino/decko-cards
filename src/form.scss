@@ -40,13 +40,13 @@
   label.visibility {
     position: absolute;
     top: -.5em;
-    left: 0;
+    left: -.5em;
     min-width: unset;
     margin: 0;
     padding: 0;
-    width: 1em;
+    width: 5em;
     height: 1em;
-    transform: translate(-50%,-50%);
+    transform: translateY(-50%);
 
     input {
       visibility: hidden;
@@ -58,11 +58,27 @@
       background-color: #fff;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 1em;
+      height: 1em;
+    }
+    &:hover span {
+      background-color: #ccc;
     }
     input:checked ~ span {
-      background-color: #ccc;
+      content: "";
+      background-color: #2196F3;
+
+    }
+    input:checked ~ span:before {
+      content: "";
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: translate(-50%,-50%) rotate(45deg);
     }
   }
 

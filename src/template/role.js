@@ -33,7 +33,7 @@ export default {
         color: '#000000',
         backgroundColor: '#cccccc',
         transform: {
-          init: '',
+          init: 'translateX(-50%)',
           scale: 1,
           rotate: 0
         }
