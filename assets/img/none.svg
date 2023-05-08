@@ -57,14 +57,14 @@
      inkscape:groupmode="layer"
      inkscape:label="Calque 1">
     <circle
-       r="45"
+       r="39.467522"
        cy="134.95833"
        cx="107.74404"
        id="path833"
-       style="color:#000000;overflow:visible;fill:#ffffff;fill-opacity:1;stroke:#696969;stroke-width:10;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000" />
+       style="color:#000000;overflow:visible;fill:#ffffff;fill-opacity:1;stroke:#696969;stroke-width:8.77056;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000" />
     <path
        id="path835"
-       d="M 75.886898,165.84523 138.63095,103.10119"
-       style="fill:#696969;fill-rule:evenodd;stroke:#696969;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" />
+       d="M 79.803542,162.04787 134.83359,107.01783"
+       style="fill:#696969;fill-opacity:1;fill-rule:evenodd;stroke:#696969;stroke-width:8.77056;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>

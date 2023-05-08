@@ -29,6 +29,7 @@ card > * {
   z-index: 1;
   overflow: hidden;
 }
+
 card > .centerX {
   left: 50%;
   transform: translateX(-50%);
@@ -41,3 +42,9 @@ card > .centerX.centerY {
   transform: translate(-50%, -50%);
 }
 
+card [data-type="image"] {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}

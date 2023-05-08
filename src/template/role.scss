@@ -12,10 +12,10 @@ card[data-template="role"] {
     top: 2em;
     width: 1.6em;
     height: 1.6em;
-    line-height: 1.4em;
+    line-height: 1.6em;
     border-radius: 50%;
     text-align: center;
-    border: .1em solid currentColor;
+    box-shadow: inset 0 0 0 .1em currentColor;
     background-color: #fff;
   }
 
@@ -23,9 +23,6 @@ card[data-template="role"] {
     top: 2em;
     height: 7em;
     width: 100%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     z-index: 0;
     /* */
     background-size: 50%;
@@ -39,6 +36,7 @@ card[data-template="role"] {
     line-height: 1.2em;
     text-align: center;
     font-weight: bold;
+    z-index: 2;
   }
   [data-prop="info"] {
     top: 12.8em;

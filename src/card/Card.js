@@ -5,6 +5,35 @@ import _T from '../i18n/i18n'
 import './card.css'
 import templates from '../template/templates.js'
 
+function getHTML(t) {
+  return t.replace(/\n/g, '<br/>')
+}
+
+function calcTranform(elt, transform) {
+  const tr = [];
+  Object.keys(transform).forEach(k => {
+    switch(k) {
+      // Initial value
+      case 'init': {
+        tr.push(transform[k])
+        break;
+      }
+      // Angle
+      case 'rotate': 
+      case 'skewX': 
+      case 'skewY': {
+        tr.push(k + '(' + transform[k] + 'deg)')
+        break;
+      }
+      case 'scale': {
+        tr.push(k + '(' + transform[k] + ')')
+        break;
+      }
+    }
+  })
+  elt.style.transform = tr.join(' ');
+}
+
 /** Card class
  */
 class Card {
@@ -23,79 +52,276 @@ class Card {
       parent: this.element
     })
     // Properties
+    this.properties = JSON.parse(JSON.stringify(template.properties))
     this.style = {};
-    this.properties = {}
-    for (let p in template.properties) {
-      this.properties[p] = Object.assign(template.properties[p])
-    }
     // Set parameters
-    this.show(options.properties)
+    this.show()
   }
 }
 
 Card.prototype.show = function() {
+  // Card style
   this.borderElt.style.borderColor = this.style.borderColor || '#fff';
-  for (p in this.properties) {
+  // Card properties
+  Object.keys(this.properties).forEach(p => {
     const elt = this.element.querySelector('[data-prop="'+p+'"]')
     const prop = this.properties[p];
+    // Visibility
+    if (prop.hasOwnProperty('visibility')) {
+      if (prop.visibility === false) elt.style.display = 'none';
+      else elt.style.display = '';
+    }
+    elt.dataset.type = prop.type;
+    // 
     switch (prop.type) {
       case 'text': 
       case 'emoji': 
       case 'textarea': {
         const content = prop.value !== undefined ? prop.value : _T(prop.default) || ''
-        elt.innerHTML = content.replace('\n', '<br/>');
-        if (!content) elt.style.display = 'none';
-        else elt.style.display = '';
+        elt.innerHTML = getHTML(content);
+        break;
       }
       case 'image': {
         elt.style.backgroundImage = 'url(' + (prop.img !== undefined ? prop.img : prop.default) +')'
+        break;
+      }
+      default: {
+        console.warn('[BADTYPE] ', prop.type)
+        break;
       }
     }
-  }
+    if (prop.style) {
+      Object.keys(prop.style).forEach(s => {
+        switch(s) {
+          case 'transform': {
+            calcTranform(elt, prop.style[s])
+            break;
+          }
+          case 'backgroundSize': {
+            elt.style[s] = prop.style[s] + '%';
+            break;
+          }
+          default: {
+            elt.style[s] = prop.style[s];
+            break;
+          }
+        }
+      })
+    }
+  })
 }
 
 Card.prototype.getForm = function(elt) {
   elt.innerHTML = '';
-  const ul = element.create('UL', { parent: elt })
-  const li = element.create('LI', { parent: ul })
+  const li = element.create('FIELDSET', {
+    html: '<legend>Style</legend>',
+    parent: elt
+  })
+
   element.create('LABEL', {
     html: _T('borderColor'),
     parent: li
   })
+  //   
   element.create('INPUT', {
-    value: this.style.borderColor || '',
+    type: 'color',
+    value: this.style.borderColor || '#ffffff',
     change: (e) => {
-      this.style.borderColor = e.target.value || '#f00'
+      this.style.borderColor = e.target.value || '#ffffff'
       this.show()
     },
     parent: li
   })
   Object.keys(this.properties).forEach (p => {
     const prop = this.properties[p];
+    const li = element.create('FIELDSET', {
+      html: '<legend>' + p + '</legend>',
+      'data-type': prop.type,
+      parent: elt
+    })
+    // Target element
+    const target = this.element.querySelector('[data-prop="'+p+'"]');
+    // Visible
+    if (prop.hasOwnProperty('visibility')) {
+      const label = element.create('LABEL', { className: 'visibility', parent: li })
+      element.create('INPUT', {
+        type: 'checkbox',
+        value: prop.visibility !== false,
+        change: (e) => {
+          if (!e.target.checked) target.style.display = 'none';
+          else target.style.display = '';
+        },
+        parent: label
+      })
+      element.create('SPAN', { parent: label })
+    }
+    // Type
     switch (prop.type) {
       case 'text': 
       case 'emoji': 
       case 'textarea': {
-        const li = element.create('LI', { parent: ul })
-        element.create('LABEL', {
-          html: p,
-          parent: li
-        })
-        const target = this.element.querySelector('[data-prop="'+p+'"]');
         element.create(prop.type==='textarea' ? 'TEXTAREA' : 'INPUT', {
           value: prop.value || '',
+          type: 'text',
           on: {
             keyup: (e) => {
               prop.value = e.target.value
-              const content = e.target.value.replace('\n', '<br/>');
+              const content = getHTML(e.target.value);
               target.innerHTML = content
-              if (!content) target.style.display = 'none';
-              else target.style.display = '';
             }
           },
           parent: li
         })
+        break;
       }
+      case 'image': {
+        element.create('INPUT', {
+          type: 'url',
+          className: 'image',
+          change: (e) => {
+            prop.value = e.target.value
+            target.style.backgroundImage = 'url(' + prop.value +')'
+          },
+          parent: li
+        })
+        element.create('button', {
+          className: 'image',
+          change: (e) => {
+          },
+          parent: li
+        })
+        break;
+      }
+    }
+    // Style
+    const styles = Object.keys(prop.style || {})
+    if (styles.length) {
+      const field = element.create('FIELDSET', {
+        html: '<legend>Style</legend>',
+        parent: li
+      })
+      styles.forEach(s => {
+        const label = (s!=='transform' ? element.create('LABEL', { html: _T(s), parent: field }) : null);
+        switch(s) {
+          case 'color':
+          case 'backgroundColor': {
+            element.create('INPUT', {
+              type: 'color',
+              value: prop.style[s],
+              change: (e) => {
+                target.style[s] = prop.style[s] = e.target.value
+              },
+              parent: label
+            })
+            break;
+          }
+          case 'backgroundSize': {
+            element.create('INPUT', {
+              type: 'range',
+              className: 'size',
+              min: 20,
+              max: 200,
+              step: 1,
+              value: prop.style[s],
+              on: {
+                input: (e) => {
+                  prop.style[s] = e.target.value
+                  target.style[s] = prop.style[s] + '%'
+                }
+              },
+              parent: label
+            })
+            break;
+          }
+          case 'backgroundPosition': {
+            const position = element.create('SELECT', { 
+              change: (e) => {
+                target.style[s] = prop.style[s] = e.target.value
+              },
+              parent: label 
+            });
+            ['top', 'center', 'bottom'].forEach(p => {
+              element.create('OPTION', {
+                value: p,
+                html: _T(p),
+                selected: prop.style[s] === p,
+                parent: position
+              })
+            })
+            break;
+          }
+          case 'transform': {
+            Object.keys(prop.style.transform).forEach(t => {
+              const label = element.create('LABEL', { html: _T(t), parent: field })
+              switch(t) {
+                case 'scale': {
+                  const scale = element.create('INPUT', {
+                    type: 'range',
+                    min: .5,
+                    max: 3,
+                    step: .1,
+                    value: prop.style.transform[t],
+                    on: {
+                      input: (e) => {
+                        prop.style.transform[t] = e.target.value
+                        calcTranform(target, prop.style.transform)
+                      }
+                    },
+                    parent: label
+                  })
+                  element.create('BUTTON', {
+                    html: '↻',
+                    className: 'reset',
+                    click: () => {
+                      scale.value = 1;
+                      scale.dispatchEvent(new Event('input'))
+                    },
+                    parent: label
+                  })
+                  break;
+                }
+                case 'skewY': 
+                case 'rotate': {
+                  const angle = element.create('INPUT', {
+                    type: 'range',
+                    className: 'angle',
+                    min: -5,
+                    max: 5,
+                    step: .1,
+                    value: -1 * prop.style.transform[t],
+                    on: {
+                      input: (e) => {
+                        prop.style.transform[t] = -1 * e.target.value
+                        calcTranform(target, prop.style.transform)
+                      }
+                    },
+                    parent: label
+                  })
+                  element.create('BUTTON', {
+                    html: '↻',
+                    className: 'reset',
+                    click: () => {
+                      angle.value = 0;
+                      angle.dispatchEvent(new Event('input'))
+                    },
+                    parent: label
+                  })
+                  break;
+                }
+                default: {
+                  label.style.display = 'none';
+                  break;
+                }
+              }
+            })
+            break;
+          }
+          default: {
+            //label.style.display = 'none';
+            break;
+          }
+        }
+      })
     }
   })
 }

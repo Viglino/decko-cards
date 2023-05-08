@@ -4,19 +4,40 @@ export default {
   properties: {
     title: {
       type: 'text',
-      default: 'title'
+      default: 'Descko &nbsp;\' &nbsp; Cards',
+      style: {
+        color: '#000000',
+        backgroundColor: '#cccccc'
+      }
     },
     logo: {
-      type: 'emoji',
-      // default: '⭐'
+      type: 'image',
+      visibility: false,
+      default: './img/none.svg',
+      style: {
+        backgroundSize: 80
+      }
     },
     image: {
       type: 'image',
-      default: './img/none.svg'
+      default: './img/none.svg',
+      style: {
+        backgroundSize: 50,
+        backgroundPosition: 'bottom'
+      }
     },
     name: {
       type: 'text',
-      default: 'name'
+      default: 'name',
+      style: {
+        color: '#000000',
+        backgroundColor: '#cccccc',
+        transform: {
+          init: '',
+          scale: 1,
+          rotate: 0
+        }
+      }
     },
     info: {
       type: 'textarea',

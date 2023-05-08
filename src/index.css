@@ -14,6 +14,7 @@ header {
   box-shadow: 0 0 10px rgba(0,0,0,1);
   overflow: hidden;
   background-color: #fff;
+  z-index: 1;
 }
 header img {
   float: left;
@@ -30,10 +31,16 @@ header h1 {
 }
 
 main {
-  margin-top: 4em;
-  padding: 1em;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 4em auto 0;
+  padding: 7.5em 1em 0;
+  max-width: 80em;
 }
 main #cards {
+  position: fixed;
+  left: 0;
+  top: 4em;
   height: 7em;
   width: 100%;
   background-color: #eee;
@@ -44,32 +51,6 @@ main #cards {
 main #card {
   display: inline-block;
   vertical-align: top;
-}
-main #form {
-  vertical-align: top;
-  width: calc(100% - 72mm);
-  padding: 0.5em;
-  display: inline-block;
-  box-sizing: border-box;
-}
-main #form ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-main #form label {
-  vertical-align: top;
-  padding: .3em .6em 0;
-  display: inline-block;
-  min-width: 7em;
-}
-main #form input,
-main #form textarea {
-  font-family: Arial, sans-serif;
-  font-size: 1em;
-  padding: .3em .6em;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 footer {

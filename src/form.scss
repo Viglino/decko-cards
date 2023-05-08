@@ -1,0 +1,143 @@
+#form {
+  vertical-align: top;
+  width: calc(100% - 72mm);
+  padding: 0 0.5em;
+  display: inline-block;
+  box-sizing: border-box;
+  height: calc(100vh - 12em);
+  overflow-y: auto;
+
+  fieldset {
+    position: relative;
+    background-color: #efefef;
+    border: 1px solid #999;
+  }
+/*
+  legend {
+    background-color: #efefef;
+    border-radius: 1em;
+    box-shadow: 0 -1px #999;
+    transform: translateY(2px);
+  }
+  fieldset fieldset legend {
+    box-shadow: unset;
+  }
+*/
+
+  legend {
+    text-transform: capitalize;
+    padding: 0 .5em;
+  }
+
+  label {
+    vertical-align: top;
+    padding: 0 .6em .2em;
+    vertical-align: middle;
+    display: inline-block;
+    min-width: 7em;
+  }
+
+  label.visibility {
+    position: absolute;
+    top: -.5em;
+    left: 0;
+    min-width: unset;
+    margin: 0;
+    padding: 0;
+    width: 1em;
+    height: 1em;
+    transform: translate(-50%,-50%);
+
+    input {
+      visibility: hidden;
+    }
+
+    span {
+      position: absolute;
+      border: 1px solid #999;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    input:checked ~ span {
+      background-color: #ccc;
+    }
+  }
+
+  input,
+  select, 
+  textarea {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    padding: .3em .6em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  textarea {
+    min-height: 5em;
+    width: 100%!important;
+  }
+  input[type="checkbox"] {
+    width: auto;
+    float: left;
+    margin-right: .5em;
+  }
+  input[type="range"] {
+    padding: 0;
+    vertical-align: middle;
+  }
+  button.reset {
+    cursor: pointer;
+    padding: 0;
+    width: 1.8em;
+    height: 2em;
+  }
+
+  fieldset fieldset {
+    padding-bottom: 0;
+
+    select,
+    input {
+      width: 7em;
+      margin-left: .5em;
+      vertical-align: middle;
+    }
+    input.angle {
+      width: 10em;
+    }
+    input.size {
+      width: 15em;
+    }
+    label {
+      min-width: unset;
+      padding: 0 .5em;
+      margin-bottom: .5em;
+    }
+  }
+
+  input[type="color"] {
+    padding: 0;
+    width: 3em;
+    height: 2.2em;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  [data-type="image"] {
+    input[type="url"] {
+      width: calc(100% - 3em);
+      vertical-align: middle;
+    }
+    button {
+      width: 2.5em;
+      height: 2.4em;
+      margin-left: .5em;
+      vertical-align: middle;
+    }
+    button:before {
+      content: "🖼️";
+    }
+  }
+}
