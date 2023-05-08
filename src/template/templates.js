@@ -12,6 +12,5 @@ for (let i in templates) {
   templates[i].properties.html = templates[i].html;
   templates[i] = templates[i].properties;
 }
-console.log(templates)
 
 export default templates

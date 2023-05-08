@@ -32,7 +32,6 @@ function calcTranform(elt, transform) {
       }
     }
   })
-  console.log(tr)
   elt.style.transform = tr.join(' ');
 }
 
@@ -152,7 +151,7 @@ Card.prototype.getForm = function(elt) {
     // Visible
     if (prop.hasOwnProperty('visibility')) {
       const label = element.create('LABEL', { className: 'visibility', parent: li })
-      const vis = element.create('INPUT', {
+      element.create('INPUT', {
         type: 'checkbox',
         checked: prop.visibility !== false,
         change: (e) => {

@@ -18,7 +18,7 @@ function scanDir(dir) {
         const keypath = dir.split('/');
         keypath.shift()
         json.keywords = (json.keywords || []).concat(keypath)
-        files.push(json)
+        files.unshift(json)
       }
     }
   });

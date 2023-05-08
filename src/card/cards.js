@@ -48,4 +48,6 @@ function selectCard(c) {
   c.card.getForm(document.getElementById('form'))
 }
 
+addCard()
+
 export default cards
