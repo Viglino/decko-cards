@@ -1,4 +1,5 @@
 card[data-template="role"] {
+
   [data-prop="title"] {
     width: 100%;
     height: 1.6em;
@@ -60,16 +61,15 @@ card[data-template="role"] {
     height: 1.2em;
     line-height: 1.2em;
     text-align: center;
-    font-weight: bold;
     z-index: 2;
   }
   [data-prop="info"] {
-    top: 12.8em;
-    padding: .1em 1em;
-    font-size: 4em;
     box-sizing: border-box;
     height: 11em;
     width: 100%;
     text-align: justify;
+    padding: 0.1em 1em;
+    font-size: 3.8em;
+    top: 13.7em;
   }
 }

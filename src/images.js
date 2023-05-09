@@ -1,6 +1,19 @@
 // List of files in assets/img
 export default [
   {
+    "file": "earth-eye.svg",
+    "author": "Viglino",
+    "keywords": [
+      "earth",
+      "eye",
+      "symbol"
+    ],
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "id": "earth-eye",
+    "path": "./img/symbol/"
+  },
+  {
     "file": "joker.svg",
     "author": "Viglino",
     "keywords": [

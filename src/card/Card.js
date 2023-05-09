@@ -83,7 +83,7 @@ Card.prototype.copy = function() {
 /** Render the card */
 Card.prototype.render = function() {
   // Card style
-  this.borderElt.style.borderColor = this.style.borderColor || '#fff';
+  this.borderElt.style.color = this.style.borderColor || '#fff';
   // Card properties
   Object.keys(this.properties).forEach(p => {
     const elt = this.element.querySelector('[data-prop="'+p+'"]')
@@ -157,7 +157,7 @@ Card.prototype.getForm = function(elt) {
     value: this.style.borderColor || '#ffffff',
     change: (e) => {
       this.style.borderColor = e.target.value || '#ffffff'
-      this.borderElt.style.borderColor = this.style.borderColor || '#fff';
+      this.borderElt.style.color = this.style.borderColor || '#fff';
     },
     parent: li
   })
