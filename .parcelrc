@@ -2,7 +2,7 @@
   "extends": ["@parcel/config-default"],
   "reporters":  ["...", "parcel-reporter-static-files-copy"],
   "transformers": {
-    "*-template.html": ["...", "@parcel/transformer-inline-string"],
+    "*template*.html": ["...", "@parcel/transformer-inline-string"],
     "*.txt": ["...", "@parcel/transformer-inline-string"]
   }
 }

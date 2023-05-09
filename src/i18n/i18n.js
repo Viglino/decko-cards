@@ -4,7 +4,8 @@
  */
 class I18N {
   constructor(lang) {
-    this.setLanguage(lang || 'en');
+    this.defaultLanguage = lang || 'en'
+    this.setLanguage(this.defaultLanguage);
   }
 }
 
@@ -60,7 +61,7 @@ const i18n = new I18N();
  * @return {string} the translated string or the string itself or empty string if empty=true
  */
 function _T(s, empty) {
-  return i18n[i18n.language][s] || (empty ? '' : s);
+  return i18n[i18n.language][s] || i18n[i18n.defaultLanguage][s] || (empty ? '' : s);
 }
 
 export { I18N }

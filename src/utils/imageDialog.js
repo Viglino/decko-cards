@@ -17,6 +17,7 @@ function imageDialog(fn) {
     })
   });
   dialog.show({
+    title: _T('images'),
     html: content,
     className: 'img',
     buttons: {

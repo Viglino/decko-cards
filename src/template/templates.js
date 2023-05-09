@@ -1,6 +1,6 @@
 import '../template/role.scss'
-import roleHTML from '../template/role-template.html'
-import roleProp from '../template/role.js'
+import roleHTML from 'bundle-text:./role.html'
+import roleProp from './role.js'
 
 const templates = {
   role: {

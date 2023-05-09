@@ -14,7 +14,7 @@ header {
   box-shadow: 0 0 10px rgba(0,0,0,1);
   overflow: hidden;
   background-color: #fff;
-  z-index: 1;
+  z-index: 10;
 }
 header img {
   float: left;
@@ -31,15 +31,15 @@ header h1 {
 }
 
 main {
-  width: 100vw;
+  width: calc(100vw - 2em);
   box-sizing: border-box;
   margin: 4em auto 0;
-  padding: 7.5em 1em 0;
+  padding: 7.5em 0 0;
   max-width: 80em;
 }
 
 #cards {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 4em;
   height: 7em;
@@ -66,14 +66,47 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: .5em;
 }
+
+/* Scrollbar */
+#cards ul::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+#cards ul::-webkit-scrollbar-track:hover {
+  background-color: #ddd;
+}
+#cards ul::-webkit-scrollbar-thumb {
+  background: #07f;
+  border-radius: 10px;
+}
+#cards ul::-webkit-scrollbar-thumb:hover {
+  background: #37b; 
+}
+
 #cards li {
+  position: relative;
   display: inline-block;
-  margin: .5em .1em;
+  margin: 0 .1em;
   cursor: pointer;
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: 0;
+  transition: transform .03s;
+  white-space: initial;
+}
+#cards li:hover {
+  z-index: 1;
+  transform: scale(1.02);
 }
 #cards li[data-select] {
-  box-shadow: 0 0 4px 1px red;
+  box-shadow: 0 0 0px 3px red;
+  z-index: 2;
+  transform: scale(1.05);
 }
 #cards card {
   font-size: 1px;
@@ -82,6 +115,54 @@ main {
 #card {
   display: inline-block;
   vertical-align: top;
+}
+#card button {
+  position: relative;
+  display: block;
+  margin: 1em auto .5em;
+  background-color: #f00;
+  color: #fff;
+  border: 0;
+  font-size: 1.1em;
+  padding: .5em 1.5em .5em 2.5em;
+  border-radius: .3em;
+  text-transform: capitalize;
+  cursor: pointer;
+  min-width: 8.3em;
+}
+#card button.delete {
+  background-color: #500;
+  margin: .5em auto ;
+}
+
+#card button:before {
+  content: "+ ";
+  font-size: 1.5em;
+  line-height: .9em;
+  width: .8em;
+  height: .8em;
+  text-align: center;
+  background-color: #fff;
+  color: #f00;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translate(-50%, -50%);
+}
+#card button.delete:before {
+  content: "-";
+  line-height: .7em;
+  color: #500;
+}
+
+
+#card button:hover {
+  background-color: #d00;
+}
+#card button:hover:before {
+  color: #d00;
 }
 
 footer {

@@ -10,12 +10,19 @@ export default {
         backgroundColor: '#cccccc'
       }
     },
+    line: {
+      type: 'lineh',
+      style: {
+        color: 'transparent'
+      }
+    },
     logo: {
       type: 'image',
-      visibility: false,
       default: './img/none.svg',
+      alt: [ 'circle', 'box', 'image', 'hidden'],
       style: {
-        backgroundSize: 80
+        backgroundSize: 80,
+        borderColor: 'transparent'
       }
     },
     image: {
@@ -23,7 +30,23 @@ export default {
       default: './img/none.svg',
       style: {
         backgroundSize: 50,
-        backgroundPosition: 'bottom'
+        backgroundPositionY: 'bottom'
+      }
+    },
+    background: {
+      type: 'image',
+      style: {
+        backgroundSize: 30,
+        backgroundPositionX: 80,
+        backgroundPositionY: 100
+      }
+    },
+    foreground: {
+      type: 'image',
+      style: {
+        backgroundSize: 30,
+        backgroundPositionX: 20,
+        backgroundPositionY: 100
       }
     },
     name: {

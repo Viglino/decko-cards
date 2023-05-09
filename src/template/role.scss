@@ -8,6 +8,14 @@ card[data-template="role"] {
     text-align: center;
   }
   
+  [data-prop="line"] {
+    top: 2em;
+    height: 0;
+    width: 100%;
+    color: transparent;
+    border: 1px solid currentColor;
+    transform: translateY(-50%);
+  }
   [data-prop="logo"] {
     top: 2em;
     width: 1.6em;
@@ -15,18 +23,34 @@ card[data-template="role"] {
     line-height: 1.6em;
     border-radius: 50%;
     text-align: center;
-    box-shadow: inset 0 0 0 .1em currentColor;
+    border: 2px solid #000;
     background-color: #fff;
+    box-sizing: border-box;
+  }
+  [data-prop="logo"][data-alt="box"] {
+    border-radius: 0;
+  }
+  [data-prop="logo"][data-alt="image"] {
+    width: 50%;
+    height: 8em;
+    background-color: transparent;
+    border: 0;
+  }
+  [data-prop="logo"][data-alt="hidden"] {
+    display: none;
   }
 
+  [data-prop="background"],
+  [data-prop="foreground"],
   [data-prop="image"] {
     top: 2em;
     height: 7em;
     width: 100%;
     z-index: 0;
     /* */
-    background-size: 50%;
-    background-position: bottom;
+    background-size: 20%;
+    background-position-x: center;
+    background-position-y: bottom;
   }
 
   [data-prop="name"] {
@@ -46,5 +70,6 @@ card[data-template="role"] {
     box-sizing: border-box;
     height: 11em;
     width: 100%;
+    text-align: justify;
   }
 }

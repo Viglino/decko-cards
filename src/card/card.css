@@ -18,7 +18,7 @@ card > .border {
   box-shadow: inset 0 0 0 1px #666;
   z-index: 999;
   box-sizing: border-box;
-  border-radius: 2mm;
+  border-radius: 2em;
   pointer-events: none;
 }
 

@@ -1,7 +1,7 @@
 #form {
   vertical-align: top;
   width: calc(100% - 72mm);
-  padding: 0 0.5em;
+  padding: 0 0 0 .5em;
   display: inline-block;
   box-sizing: border-box;
   height: calc(100vh - 12em);
@@ -11,6 +11,7 @@
     position: relative;
     background-color: #efefef;
     border: 1px solid #999;
+    padding: .3em .5em
   }
 /*
   legend {
@@ -87,7 +88,7 @@
   textarea {
     font-family: Arial, sans-serif;
     font-size: 1em;
-    padding: .3em .6em;
+    padding: .3em  0 .3em .6em;
     width: 100%;
     box-sizing: border-box;
   }
@@ -125,11 +126,13 @@
     }
     input.size {
       width: 15em;
+      max-width: 100%;
+      box-sizing: border-box;
     }
     label {
       min-width: unset;
       padding: 0 .5em;
-      margin-bottom: .5em;
+      margin-bottom: .3em;
     }
   }
 
@@ -147,13 +150,38 @@
       vertical-align: middle;
     }
     button {
-      width: 2.5em;
-      height: 2.4em;
-      margin-left: .5em;
+      position: relative;
+      width: 2.2em;
+      height: 2.2em;
+      margin-right: .5em;
       vertical-align: middle;
     }
     button:before {
       content: "🖼️";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
+  }
+
+  [data-type="lineh"] {
+    fieldset {
+      border: 0;
+      padding: 0;
+      legend {
+        display: none;
+      }
+    }
+  }
+
+  select.alt {
+    position: absolute;
+    top: -1.2em;
+    right: .2em;
+    width: unset;
+    max-width: 50%;
+    padding: 0 0 0 .5em;
+    border-radius: 1em;
   }
 }

@@ -56,17 +56,32 @@ class Card {
     this.properties = JSON.parse(JSON.stringify(template.properties))
     this.style = {};
     // Set parameters
-    this.show()
+    this.render()
   }
 }
 
+/** Create a new card based on this card
+ * @returns {Card}
+ */
+Card.prototype.clone = function() {
+  const c = new Card();
+  c.properties = JSON.parse(JSON.stringify(this.properties))
+  c.style = JSON.parse(JSON.stringify(this.style))
+  c.render()
+  return c;
+}
+
+/** Returns an HTML copy of the card
+ * @return {Element}
+ */
 Card.prototype.copy = function() {
-  const copy = element.create('CARD', { 'data-template': this.element.dataset.template })
+  const copy = this.element.cloneNode();
   copy.innerHTML = this.element.innerHTML;
   return copy;
 }
 
-Card.prototype.show = function() {
+/** Render the card */
+Card.prototype.render = function() {
   // Card style
   this.borderElt.style.borderColor = this.style.borderColor || '#fff';
   // Card properties
@@ -89,7 +104,7 @@ Card.prototype.show = function() {
         break;
       }
       case 'image': {
-        elt.style.backgroundImage = 'url(' + (prop.img !== undefined ? prop.img : prop.default) +')'
+        elt.style.backgroundImage = 'url(' + (prop.value !== undefined ? prop.value : prop.default) +')'
         break;
       }
       default: {
@@ -102,6 +117,12 @@ Card.prototype.show = function() {
         switch(s) {
           case 'transform': {
             calcTranform(elt, prop.style[s])
+            break;
+          }
+          case 'backgroundPositionX':
+          case 'backgroundPositionY': {
+            if (typeof(prop.style[s]) === 'number') elt.style[s] = prop.style[s] + '%';
+            else elt.style[s] = prop.style[s];
             break;
           }
           case 'backgroundSize': {
@@ -125,6 +146,7 @@ Card.prototype.getForm = function(elt) {
     parent: elt
   })
 
+  // Global properties
   element.create('LABEL', {
     html: _T('borderColor'),
     parent: li
@@ -135,10 +157,11 @@ Card.prototype.getForm = function(elt) {
     value: this.style.borderColor || '#ffffff',
     change: (e) => {
       this.style.borderColor = e.target.value || '#ffffff'
-      this.show()
+      this.borderElt.style.borderColor = this.style.borderColor || '#fff';
     },
     parent: li
   })
+  // Card properties
   Object.keys(this.properties).forEach (p => {
     const prop = this.properties[p];
     const li = element.create('FIELDSET', {
@@ -182,16 +205,6 @@ Card.prototype.getForm = function(elt) {
         break;
       }
       case 'image': {
-        const img = element.create('INPUT', {
-          type: 'url',
-          className: 'image',
-          value: prop.value || '',
-          change: (e) => {
-            prop.value = e.target.value
-            target.style.backgroundImage = 'url(' + prop.value +')'
-          },
-          parent: li
-        })
         element.create('BUTTON', {
           className: 'image',
           click: () => {
@@ -202,8 +215,36 @@ Card.prototype.getForm = function(elt) {
           },
           parent: li
         })
+        const img = element.create('INPUT', {
+          type: 'url',
+          className: 'image',
+          value: prop.value || '',
+          change: (e) => {
+            prop.value = e.target.value
+            target.style.backgroundImage = 'url(' + prop.value +')'
+          },
+          parent: li
+        })
         break;
       }
+    }
+    // ClassName
+    if (prop.alt) {
+      const alt = element.create('SELECT', {
+        className: 'alt',
+        change: () => {
+          prop.altVal = target.dataset.alt = alt.value
+        },
+        parent: li
+      })
+      prop.alt.forEach(c => {
+        const opt = element.create('OPTION', { 
+          value: c, 
+          html: c, 
+          parent: alt
+        });
+        if (prop.altVal === c) opt.selected = true
+      })
     }
     // Style
     const styles = Object.keys(prop.style || {})
@@ -216,6 +257,7 @@ Card.prototype.getForm = function(elt) {
         const label = (s!=='transform' ? element.create('LABEL', { html: _T(s), parent: field }) : null);
         switch(s) {
           case 'color':
+          case 'borderColor':
           case 'backgroundColor': {
             element.create('INPUT', {
               type: 'color',
@@ -245,21 +287,41 @@ Card.prototype.getForm = function(elt) {
             })
             break;
           }
-          case 'backgroundPosition': {
-            const position = element.create('SELECT', { 
-              change: (e) => {
-                target.style[s] = prop.style[s] = e.target.value
-              },
-              parent: label 
-            });
-            ['top', 'center', 'bottom'].forEach(p => {
-              const option = element.create('OPTION', {
-                value: p,
-                html: _T(p),
-                parent: position
+          case 'backgroundPositionX':
+          case 'backgroundPositionY': {
+            if (typeof(prop.style[s]) === 'number') {
+              element.create('INPUT', {
+                type: 'range',
+                className: 'size',
+                min: -100,
+                max: 200,
+                step: 1,
+                value: prop.style[s],
+                on: {
+                  input: (e) => {
+                    prop.style[s] = e.target.value
+                    target.style[s] = prop.style[s] + '%'
+                  }
+                },
+                parent: label
               })
-              if (prop.style[s] === p) option.selected = 'selected'
-            })
+            } else {
+              const position = element.create('SELECT', { 
+                change: (e) => {
+                  target.style[s] = prop.style[s] = e.target.value
+                },
+                parent: label 
+              });
+              const positions = (s === 'backgroundPositionX' ? ['left', 'center', 'right'] : ['top', 'center', 'bottom'])
+              positions.forEach(p => {
+                const option = element.create('OPTION', {
+                  value: p,
+                  html: _T(p),
+                  parent: position
+                })
+                if (prop.style[s] === p) option.selected = 'selected'
+              })
+            }
             break;
           }
           case 'transform': {

@@ -44,6 +44,8 @@ class Dialog {
   /** Close
    */
   show(options) {
+    //
+    this.element.title.innerHTML = options.title
     this.element.back.className = options.className || ''
     // content
     this.element.content.innerHTML = '';
