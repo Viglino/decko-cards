@@ -1,17 +1,19 @@
 export default {
   name: 'roleTemplate',
   description: 'roleDesc',
+  format: 'small',
   properties: {
     title: {
       type: 'text',
-      default: 'Descko &nbsp;\' &nbsp; Cards',
+      default: '',
       style: {
         color: '#000000',
-        backgroundColor: '#cccccc'
+        backgroundColor: '#ffffff'
       }
     },
     line: {
       type: 'lineh',
+      collapse: true,
       style: {
         color: 'transparent'
       }
@@ -21,7 +23,7 @@ export default {
       default: './img/none.svg',
       alt: [ 'circle', 'box', 'image', 'hidden'],
       style: {
-        backgroundSize: 80,
+        img_width: 90,
         borderColor: 'transparent'
       }
     },
@@ -29,24 +31,26 @@ export default {
       type: 'image',
       default: './img/none.svg',
       style: {
-        backgroundSize: 50,
-        backgroundPositionY: 'bottom'
+        img_width: 50,
+        img_top: 50
       }
     },
     background: {
       type: 'image',
+      collapse: true,
       style: {
-        backgroundSize: 30,
-        backgroundPositionX: 80,
-        backgroundPositionY: 100
+        img_width: 30,
+        img_top: 50,
+        img_left: 80
       }
     },
     foreground: {
       type: 'image',
+      collapse: true,
       style: {
-        backgroundSize: 30,
-        backgroundPositionX: 20,
-        backgroundPositionY: 100
+        img_width: 30,
+        img_top: 50,
+        img_left: 20
       }
     },
     name: {
@@ -54,7 +58,7 @@ export default {
       default: 'name',
       style: {
         color: '#000000',
-        backgroundColor: '#cccccc',
+        backgroundColor: '#ffffff',
         transform: {
           init: 'translateX(-50%)',
           scale: 1,

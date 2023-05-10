@@ -1,4 +1,20 @@
 export default {
   title: 'Titre',
-  name: 'nom'
+  name: 'nom',
+  color: 'couleur',
+  borderColor: 'couleur',
+  rotate: 'tourner',
+  scale: 'taille',
+  img_top: 'position V',
+  img_left: 'position H',
+  img_width: 'taille',
+  img_height: 'taille',
+  backgroundColor: 'couleur de fond',
+  backgroundSize: 'taille',
+  backgroundPositionX: 'position H',
+  backgroundPositionY: 'position V',
+  duplicate: 'dupliquer',
+  delete: 'supprimer',
+  ok: 'OK',
+  cancel: 'Annuler'
 }

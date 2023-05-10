@@ -94,6 +94,7 @@ Card.prototype.render = function() {
       else elt.style.display = '';
     }
     elt.dataset.type = prop.type;
+    elt.dataset.alt = prop.altVal;
     // 
     switch (prop.type) {
       case 'text': 
@@ -104,7 +105,9 @@ Card.prototype.render = function() {
         break;
       }
       case 'image': {
-        elt.style.backgroundImage = 'url(' + (prop.value !== undefined ? prop.value : prop.default) +')'
+        elt.innerHTML = '';
+        const img = element.create('IMG', { parent: elt })
+        img.src = (prop.value !== undefined ? prop.value : prop.default || '')
         break;
       }
       default: {
@@ -119,14 +122,10 @@ Card.prototype.render = function() {
             calcTranform(elt, prop.style[s])
             break;
           }
-          case 'backgroundPositionX':
-          case 'backgroundPositionY': {
-            if (typeof(prop.style[s]) === 'number') elt.style[s] = prop.style[s] + '%';
-            else elt.style[s] = prop.style[s];
-            break;
-          }
-          case 'backgroundSize': {
-            elt.style[s] = prop.style[s] + '%';
+          case 'img_top':
+          case 'img_left':
+          case 'img_width': {
+            elt.querySelector('img').style[s.replace('img_','')] = prop.style[s] + '%';
             break;
           }
           default: {
@@ -165,13 +164,23 @@ Card.prototype.getForm = function(elt) {
   Object.keys(this.properties).forEach (p => {
     const prop = this.properties[p];
     const li = element.create('FIELDSET', {
-      html: '<legend>' + p + '</legend>',
       'data-type': prop.type,
       parent: elt
     })
+    if (prop.collapse) li.dataset.collapse = '';
+    else delete li.dataset.collapse;
+    const leg = element.create ('LEGEND', { html: '<i class="expand"></i>' + _T(p), parent: li })
+    // Expand
+    leg.querySelector('i').addEventListener('click', () => {
+      prop.collapse = !prop.collapse;
+      if (prop.collapse) li.dataset.collapse = '';
+      else delete li.dataset.collapse;
+    })
+
     // Target element
     const target = this.element.querySelector('[data-prop="'+p+'"]');
-    // Visible
+    // Visible 
+/*
     if (prop.hasOwnProperty('visibility')) {
       const label = element.create('LABEL', { className: 'visibility', parent: li })
       element.create('INPUT', {
@@ -186,12 +195,14 @@ Card.prototype.getForm = function(elt) {
       })
       element.create('SPAN', { parent: label })
     }
+*/
     // Type
     switch (prop.type) {
       case 'text': 
       case 'textarea': {
         element.create(prop.type==='textarea' ? 'TEXTAREA' : 'INPUT', {
           value: prop.value || '',
+          placeholder: _T(p),
           type: 'text',
           on: {
             keyup: (e) => {
@@ -218,10 +229,11 @@ Card.prototype.getForm = function(elt) {
         const img = element.create('INPUT', {
           type: 'url',
           className: 'image',
+          placeholder: 'http://',
           value: prop.value || '',
           change: (e) => {
             prop.value = e.target.value
-            target.style.backgroundImage = 'url(' + prop.value +')'
+            target.querySelector('IMG').src = prop.value
           },
           parent: li
         })
@@ -269,59 +281,23 @@ Card.prototype.getForm = function(elt) {
             })
             break;
           }
-          case 'backgroundSize': {
+          case 'img_top':
+          case 'img_left':
+          case 'img_width': {
             element.create('INPUT', {
               type: 'range',
               className: 'size',
-              min: 20,
-              max: 200,
-              step: 1,
+              min: /width/.test(s) ? 20 : -200,
+              max: /width/.test(s) ? 200 : 300,
               value: prop.style[s],
               on: {
                 input: (e) => {
                   prop.style[s] = e.target.value
-                  target.style[s] = prop.style[s] + '%'
+                  target.querySelector('img').style[s.replace('img_','')] = prop.style[s] + '%'
                 }
               },
               parent: label
             })
-            break;
-          }
-          case 'backgroundPositionX':
-          case 'backgroundPositionY': {
-            if (typeof(prop.style[s]) === 'number') {
-              element.create('INPUT', {
-                type: 'range',
-                className: 'size',
-                min: -100,
-                max: 200,
-                step: 1,
-                value: prop.style[s],
-                on: {
-                  input: (e) => {
-                    prop.style[s] = e.target.value
-                    target.style[s] = prop.style[s] + '%'
-                  }
-                },
-                parent: label
-              })
-            } else {
-              const position = element.create('SELECT', { 
-                change: (e) => {
-                  target.style[s] = prop.style[s] = e.target.value
-                },
-                parent: label 
-              });
-              const positions = (s === 'backgroundPositionX' ? ['left', 'center', 'right'] : ['top', 'center', 'bottom'])
-              positions.forEach(p => {
-                const option = element.create('OPTION', {
-                  value: p,
-                  html: _T(p),
-                  parent: position
-                })
-                if (prop.style[s] === p) option.selected = 'selected'
-              })
-            }
             break;
           }
           case 'transform': {

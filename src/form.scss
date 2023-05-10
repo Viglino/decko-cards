@@ -9,7 +9,6 @@
 
   fieldset {
     position: relative;
-    background-color: #efefef;
     border: 1px solid #999;
     padding: .3em .5em
   }
@@ -24,6 +23,35 @@
     box-shadow: unset;
   }
 */
+
+  .expand {
+    display: inline-block;
+    width: 1.5em;
+    height: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .expand:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-color: #05f;
+    border-width: .5em .4em 0;
+    margin: .1em 0;
+  }
+  fieldset[data-collapse] .expand:before {
+    transform: rotate(-90deg);
+  }
+
+  fieldset[data-collapse] > *{
+    display: none;
+  }
+  fieldset[data-collapse] > legend {
+    display: block;
+  }
+
 
   legend {
     text-transform: capitalize;
@@ -91,6 +119,20 @@
     padding: .3em  0 .3em .6em;
     width: 100%;
     box-sizing: border-box;
+    background-color: #eee;
+    border: 0;
+    border-radius: 3px;
+  }
+  input[type="text"]:focus,
+  input[type="url"]:focus {
+    box-shadow: inset 0 -2px #05f;
+    border-radius: 3px 3px 0 0;
+    outline: none;
+  }
+  textarea:focus {
+    box-shadow: inset 0 0 0 2px #05f;
+    border-radius: 3px 3px 0 0;
+    outline: none;
   }
   textarea {
     min-height: 5em;
@@ -105,6 +147,7 @@
     padding: 0;
     vertical-align: middle;
   }
+
   button.reset {
     cursor: pointer;
     padding: 0;
@@ -142,7 +185,14 @@
     height: 2.2em;
     vertical-align: middle;
     display: inline-block;
+    background-color: transparent;
+    padding: 0;
+    height: 2em;
   }
+  input[type="color"]:focus {
+    box-shadow: unset;
+  }
+
 
   [data-type="image"] {
     input[type="url"] {
@@ -152,7 +202,7 @@
     button {
       position: relative;
       width: 2.2em;
-      height: 2.2em;
+      height: 2em;
       margin-right: .5em;
       vertical-align: middle;
     }
@@ -161,6 +211,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
+      line-height: 1em;
       transform: translate(-50%, -50%);
     }
   }

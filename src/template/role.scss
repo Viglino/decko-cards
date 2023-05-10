@@ -7,6 +7,7 @@ card[data-template="role"] {
     top: .4em;
     left: 0;
     text-align: center;
+    white-space: pre;
   }
   
   [data-prop="line"] {
@@ -48,10 +49,6 @@ card[data-template="role"] {
     height: 7em;
     width: 100%;
     z-index: 0;
-    /* */
-    background-size: 20%;
-    background-position-x: center;
-    background-position-y: bottom;
   }
 
   [data-prop="name"] {

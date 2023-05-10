@@ -4,10 +4,17 @@ export default {
   color: 'color',
   borderColor: 'color',
   rotate: 'rotate',
+  scale: 'scale',
+  img_top: 'position V',
+  img_left: 'position H',
+  img_width: 'size',
+  img_height: 'size',
   backgroundColor: 'back color',
   backgroundSize: 'size',
   backgroundPositionX: 'position H',
   backgroundPositionY: 'position V',
+  duplicate: 'duplicate',
+  delete: 'delete',
   ok: 'OK',
   cancel: 'Cancel'
 }
