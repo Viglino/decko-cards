@@ -8,3 +8,4 @@
 - https://www.maddyness.com/2017/03/06/maddycrowd-pitch-cards-serious-game-entrepreneurs-pitcher/
 - https://openseriousgames.org/openseriousfactory-4-jeux-de-cartes-pour-vous-aider-a-creer-votre-serious-game/
 - https://openseriousgames.org/osg-606-workshop-design-cards/
+- https://medium.com/@robin.beraud.sudreau/passez-en-mode-meta-d%C3%A9couvrez-le-serious-game-d%C3%A9briefing-kards-9db678219415 (kirkpatrick model)
