@@ -1,31 +1,31 @@
-card[data-template="role"] {
+card[data-template="role"] front {
 
   [data-prop="title"] {
     width: 100%;
-    height: 1.6em;
-    line-height: 1.6em;
-    top: .4em;
+    height: 8em;
+    line-height: 8em;
+    top: 2em;
     left: 0;
     text-align: center;
     white-space: pre;
   }
   
   [data-prop="line"] {
-    top: 2em;
+    top: 10em;
     height: 0;
     width: 100%;
     color: transparent;
-    border: 1px solid currentColor;
+    border: .4em solid currentColor;
     transform: translateY(-50%);
   }
-  [data-prop="logo"] {
-    top: 2em;
-    width: 1.6em;
-    height: 1.6em;
-    line-height: 1.6em;
+  [data-prop="icon"] {
+    top: 10em;
+    width: 8em;
+    height: 8em;
+    line-height: 8em;
     border-radius: 50%;
     text-align: center;
-    border: 2px solid #000;
+    border: .75em solid #000;
     background-color: #fff;
     box-sizing: border-box;
   }
@@ -34,7 +34,7 @@ card[data-template="role"] {
   }
   [data-prop="logo"][data-alt="image"] {
     width: 50%;
-    height: 8em;
+    height: 40em;
     background-color: transparent;
     border: 0;
   }
@@ -45,27 +45,54 @@ card[data-template="role"] {
   [data-prop="background"],
   [data-prop="foreground"],
   [data-prop="image"] {
-    top: 2em;
-    height: 7em;
+    top: 10em;
+    height: 35em;
     width: 100%;
     z-index: 0;
   }
 
   [data-prop="name"] {
-    top: 9em;
+    top: 45em;
     left: 50%;
     width: 200%;
-    height: 1.2em;
-    line-height: 1.2em;
+    height: 6em;
+    line-height: 6em;
     text-align: center;
     z-index: 2;
   }
   [data-prop="info"] {
     box-sizing: border-box;
-    height: 10em;
+    height: 50em;
     width: 100%;
     text-align: justify;
-    padding: 0.1em 1em;
-    top: 10.2em;
+    padding: 0.5em 5em;
+    top: 51em;
+  }
+}
+
+card[data-template="role"] back {
+  [data-prop="logo"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+  }
+  [data-prop="logo"][data-alt="circle"] {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  [data-prop="logo"][data-alt="hidden"] {
+    display: none;
+  }
+
+  [data-prop="deck"] {
+    top: calc(50% + 20em);
+    left: 50%;
+    line-height: 5em;
+    padding: 0 .5em;
+    border-radius: .5em;;
+    text-align: center;
+    z-index: 2;
   }
 }

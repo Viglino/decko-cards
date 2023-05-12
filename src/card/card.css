@@ -8,11 +8,22 @@ card {
   overflow: hidden;
   box-shadow: .3em .3em 1em rgba(0,0,0,.5);
   box-sizing: border-box;
+  font-size: 1mm;
+}
+[data-format=small] card {
+  font-size: 1mm;
+}
+[data-format=medium] card {
+  font-size: 1.035mm;
+}
+[data-format=large] card {
+  font-size: 1.2mm;
 }
 card p  {
+  font-size: 5em;
   margin: 0;
 }
-card > .border {
+card > * > .border {
   font-size: 1em;
   position: absolute;
   width: 100%;
@@ -28,24 +39,27 @@ card > .border {
   border-radius: 2em;
   pointer-events: none;
 }
+card > back > .border {
+  background-color: currentColor;
+  z-index: 0;
+}
 
-card > * {
-  font-size: 5em;
+card > * > * {
   position: absolute;
   box-sizing: content-box;
   z-index: 1;
   overflow: hidden;
 }
 
-card > .centerX {
+card .centerX {
   left: 50%;
   transform: translateX(-50%);
 }
-card > .centerY {
+card .centerY {
   left: 50%;
   transform: translateY(-50%);
 }
-card > .centerX.centerY {
+card .centerX.centerY {
   transform: translate(-50%, -50%);
 }
 
@@ -54,4 +68,13 @@ card [data-type="image"] img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Flip front / back */
+back,
+[data-face="back"] front {
+  display: none;
+}
+[data-face="back"] back {
+  display: block;
 }

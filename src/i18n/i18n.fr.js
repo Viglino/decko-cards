@@ -13,6 +13,8 @@ export default {
   backgroundSize: 'taille',
   backgroundPositionX: 'position H',
   backgroundPositionY: 'position V',
+  front: 'face',
+  back: 'dos',
   duplicate: 'dupliquer',
   delete: 'supprimer',
   ok: 'OK',

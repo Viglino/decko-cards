@@ -1,7 +1,6 @@
 export default {
   name: 'roleTemplate',
   description: 'roleDesc',
-  format: 'small',
   properties: {
     title: {
       type: 'text',
@@ -18,7 +17,7 @@ export default {
         color: 'transparent'
       }
     },
-    logo: {
+    icon: {
       type: 'image',
       default: './img/none.svg',
       alt: [ 'circle', 'box', 'image', 'hidden'],
@@ -68,8 +67,31 @@ export default {
     },
     info: {
       type: 'textarea',
-      fontSize: .8,
+      fontSize: 4,
       default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at quam vel lorem suscipit sagittis non ac justo. Aenean volutpat purus vitae metus aliquam ultrices. Suspendisse rhoncus odio sit amet ex malesuada tincidunt.'
     }
+  },
+  back: {
+    logo: {
+      type: 'image',
+      default: './img/none.svg',
+      alt: [ 'box', 'circle', 'hidden'],
+      style: {
+        img_width: 60
+      }
+    },
+    deck: {
+      type: 'text',
+      default: 'name',
+      style: {
+        color: '#000000',
+        backgroundColor: 'transparent',
+        transform: {
+          init: 'translateX(-50%)',
+          scale: 1,
+          rotate: 0
+        }
+      }
+    },
   }
 }

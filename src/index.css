@@ -157,6 +157,19 @@ main {
   color: #500;
 }
 
+#card button.fback {
+  padding: .5em 1.5em;
+}
+#card button.fback:before {
+  display: none;
+}
+#card[data-face="back"] button.fback span.back,
+#card button.fback span.front {
+  display: none;
+}
+#card[data-face="back"] button.fback span.front {
+  display: block;
+}
 
 #card button:hover {
   background-color: #d00;

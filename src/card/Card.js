@@ -50,14 +50,28 @@ class Card {
     // border
     this.borderElt = element.create('DIV', {
       className: 'border',
-      parent: this.element
+      parent: this.element.querySelector('front')
+    })
+    this.backElt = element.create('DIV', {
+      className: 'border',
+      parent: this.element.querySelector('back')
     })
     // Properties
-    this.properties = JSON.parse(JSON.stringify(template.properties))
-    this.style = {};
+    this.properties = JSON.parse(JSON.stringify(options.properties || template.properties))
+    this.back = JSON.parse(JSON.stringify(options.back || template.back))
+    this.style = JSON.parse(JSON.stringify(options.style || {}));
     // Set parameters
     this.render()
   }
+}
+
+Card.prototype.export = function() {
+  return JSON.stringify({
+    template: this.element.dataset.template,
+    properties: this.properties,
+    back: this.back,
+    style: this.style
+  })
 }
 
 /** Create a new card based on this card
@@ -66,6 +80,7 @@ class Card {
 Card.prototype.clone = function() {
   const c = new Card();
   c.properties = JSON.parse(JSON.stringify(this.properties))
+  c.back = JSON.parse(JSON.stringify(this.back))
   c.style = JSON.parse(JSON.stringify(this.style))
   c.render()
   return c;
@@ -84,10 +99,22 @@ Card.prototype.copy = function() {
 Card.prototype.render = function() {
   // Card style
   this.borderElt.style.color = this.style.borderColor || '#fff';
+  // Back style
+  this.backElt.style.backgroundColor = this.style.backColor || '#fff';
+  this.backElt.style.color = this.style.hatchColor || '#fff';
+  this.backElt.dataset.hatch = this.style.hach
   // Card properties
-  Object.keys(this.properties).forEach(p => {
+  this.renderProp(this.properties)
+  this.renderProp(this.back)
+}
+
+/* Render card properties */
+Card.prototype.renderProp = function(properties) {
+
+  Object.keys(properties).forEach(p => {
     const elt = this.element.querySelector('[data-prop="'+p+'"]')
-    const prop = this.properties[p];
+    if (!elt) return;
+    const prop = properties[p];
     // Visibility
     if (prop.hasOwnProperty('visibility')) {
       if (prop.visibility === false) elt.style.display = 'none';
@@ -100,6 +127,7 @@ Card.prototype.render = function() {
       case 'text': 
       case 'textarea': {
         const content = prop.value !== undefined ? prop.value : _T(prop.default) || ''
+        elt.innerHTML = '';
         const txt = element.create('P', { style: { fontSize: prop.fontSize + 'em' }, parent: elt })
         txt.innerHTML = getHTML(content);
         break;
@@ -141,11 +169,14 @@ Card.prototype.render = function() {
   })
 }
 
+/* Get card form */
 Card.prototype.getForm = function(elt) {
   elt.innerHTML = '';
+  const front = element.create('FRONT', { parent: elt })
+
   const li = element.create('FIELDSET', {
     html: '<legend>Style</legend>',
-    parent: elt
+    parent: front
   })
 
   // Global properties
@@ -164,8 +195,53 @@ Card.prototype.getForm = function(elt) {
     parent: li
   })
   // Card properties
-  Object.keys(this.properties).forEach (p => {
-    const prop = this.properties[p];
+  this.getFromProperties(this.properties, front)
+
+  // Back 
+  const back = element.create('BACK', { parent: elt })
+
+  const liback = element.create('FIELDSET', {
+    html: '<legend>Style</legend>',
+    parent: back
+  })
+
+  const hach = element.create('SELECT', { 
+    change: () => {
+      this.backElt.dataset.hatch = this.style.hach = hach.value
+    },
+    parent: liback 
+  });
+  ['solid', 'hatch', 'cross'].forEach(s => {
+    element.create('OPTION', { value: s, html: _T(s), parent: hach })
+  })
+  
+  //   
+  element.create('INPUT', {
+    type: 'color',
+    value: this.style.backColor || '#ffffff',
+    change: (e) => {
+      this.style.hatchColor = e.target.value || '#ffffff'
+      this.backElt.style.color = this.style.hatchColor || '#fff';
+    },
+    parent: liback
+  })
+  element.create('INPUT', {
+    type: 'color',
+    value: this.style.backColor || '#ffffff',
+    change: (e) => {
+      this.style.backColor = e.target.value || '#ffffff'
+      this.backElt.style.backgroundColor = this.style.backColor || '#fff';
+    },
+    parent: liback
+  })
+  
+  this.getFromProperties(this.back || {}, back)
+}
+
+Card.prototype.getFromProperties = function(properties, elt) {
+  // Card properties
+  Object.keys(properties).forEach (p => {
+    const prop = properties[p];
     const li = element.create('FIELDSET', {
       'data-type': prop.type,
       parent: elt
@@ -182,23 +258,6 @@ Card.prototype.getForm = function(elt) {
 
     // Target element
     const target = this.element.querySelector('[data-prop="'+p+'"]');
-    // Visible 
-/*
-    if (prop.hasOwnProperty('visibility')) {
-      const label = element.create('LABEL', { className: 'visibility', parent: li })
-      element.create('INPUT', {
-        type: 'checkbox',
-        checked: prop.visibility !== false,
-        change: (e) => {
-          prop.visibility = e.target.checked;
-          if (!e.target.checked) target.style.display = 'none';
-          else target.style.display = '';
-        },
-        parent: label
-      })
-      element.create('SPAN', { parent: label })
-    }
-*/
     // Type
     switch (prop.type) {
       case 'text': 

@@ -1,10 +1,15 @@
+import { saveAs } from 'file-saver';
 import element from '../utils/element';
 import Card from './Card'
 import _T from '../i18n/i18n'
 
+const cardElt = document.getElementById('card');
+const formElt = document.getElementById('form');
+
 const cards = [];
 let current;
 
+/* Card list */
 const menu = document.getElementById('cards')
 element.create('BUTTON', { 
   html: '+',
@@ -22,6 +27,7 @@ function removeCard(card) {
   selectCard(cards[index-1] || cards[index]);
 }
 
+/* Add a new card */
 function addCard(card) {
   if (card) {
     card = card.clone()
@@ -44,6 +50,8 @@ function addCard(card) {
   selectCard(c);
 }
 
+
+/* Select a card */
 function selectCard(c) {
   // Udate current
   if (current) {
@@ -52,13 +60,33 @@ function selectCard(c) {
     cards.forEach(c => delete c.li.dataset.select)
   }
   // Reset
-  document.getElementById('card').innerHTML = '';
-  document.getElementById('form').innerHTML = '';
+  cardElt.innerHTML = '';
+  formElt.innerHTML = '';
   // New selection
   current = c;
   if (!current) return; 
   c.li.dataset.select = ''
-  document.getElementById('card').appendChild(c.card.element)
+  cardElt.appendChild(c.card.element)
+
+
+  // Font / back
+  const fback = element.create('BUTTON', {
+    className: 'fback',
+    click: () => {
+      cardElt.dataset.face = formElt.dataset.face = cardElt.dataset.face === 'back' ? 'front' : 'back'
+    },
+    parent: cardElt
+  })
+  element.create('SPAN', {
+    html: _T('front'),
+    className: 'front',
+    parent: fback
+  })
+  element.create('SPAN', {
+    html: _T('back'),
+    className: 'back',
+    parent: fback
+  })
 
   // Duplicate selection
   element.create('BUTTON', {
@@ -67,7 +95,7 @@ function selectCard(c) {
     click: () => {
       addCard(current.card)
     },
-    parent: document.getElementById('card')
+    parent: cardElt
   })
 
   // Remove selection
@@ -77,10 +105,23 @@ function selectCard(c) {
     click: () => {
       removeCard(current)
     },
-    parent: document.getElementById('card')
+    parent: cardElt
   })
   
-  c.card.getForm(document.getElementById('form'))
+  // Save
+  element.create('BUTTON', {
+    html: _T('save'),
+    className: 'save',
+    click: () => {
+      const save = { cards: [] };
+      cards.forEach(c => save.cards.push(JSON.parse(c.card.export())))
+      var blob = new Blob([JSON.stringify(save)], {type: "text/plain;charset=utf-8"});
+      saveAs(blob, "card.card");
+    },
+    parent: cardElt
+  })
+  
+  c.card.getForm(formElt)
 }
 
 addCard()
