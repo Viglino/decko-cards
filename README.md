@@ -1,4 +1,4 @@
-# decko'cards
+# Decko'cardS
 
 - https://scape.enepe.fr/jeudecartes.html
 - https://de.torontomu.ca/games/research/
