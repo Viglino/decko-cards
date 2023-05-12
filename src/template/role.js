@@ -68,6 +68,7 @@ export default {
     },
     info: {
       type: 'textarea',
+      fontSize: .8,
       default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at quam vel lorem suscipit sagittis non ac justo. Aenean volutpat purus vitae metus aliquam ultrices. Suspendisse rhoncus odio sit amet ex malesuada tincidunt.'
     }
   }

@@ -9,6 +9,9 @@ card {
   box-shadow: .3em .3em 1em rgba(0,0,0,.5);
   box-sizing: border-box;
 }
+card p  {
+  margin: 0;
+}
 card > .border {
   font-size: 1em;
   position: absolute;

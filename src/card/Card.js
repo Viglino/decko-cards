@@ -98,16 +98,19 @@ Card.prototype.render = function() {
     // 
     switch (prop.type) {
       case 'text': 
-      case 'emoji': 
       case 'textarea': {
         const content = prop.value !== undefined ? prop.value : _T(prop.default) || ''
-        elt.innerHTML = getHTML(content);
+        const txt = element.create('P', { style: { fontSize: prop.fontSize + 'em' }, parent: elt })
+        txt.innerHTML = getHTML(content);
         break;
       }
       case 'image': {
         elt.innerHTML = '';
         const img = element.create('IMG', { parent: elt })
         img.src = (prop.value !== undefined ? prop.value : prop.default || '')
+        break;
+      }
+      case 'lineh': {
         break;
       }
       default: {
@@ -208,7 +211,7 @@ Card.prototype.getForm = function(elt) {
             keyup: (e) => {
               prop.value = e.target.value
               const content = getHTML(e.target.value);
-              target.innerHTML = content
+              target.querySelector('p').innerHTML = content
             }
           },
           parent: li
