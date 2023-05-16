@@ -9,3 +9,4 @@
 - https://openseriousgames.org/openseriousfactory-4-jeux-de-cartes-pour-vous-aider-a-creer-votre-serious-game/
 - https://openseriousgames.org/osg-606-workshop-design-cards/
 - https://medium.com/@robin.beraud.sudreau/passez-en-mode-meta-d%C3%A9couvrez-le-serious-game-d%C3%A9briefing-kards-9db678219415 (kirkpatrick model)
+- https://coach-agile.com/retrospective-agile-blanc-manger-retro/
