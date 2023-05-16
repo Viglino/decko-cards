@@ -10,3 +10,4 @@
 - https://openseriousgames.org/osg-606-workshop-design-cards/
 - https://medium.com/@robin.beraud.sudreau/passez-en-mode-meta-d%C3%A9couvrez-le-serious-game-d%C3%A9briefing-kards-9db678219415 (kirkpatrick model)
 - https://coach-agile.com/retrospective-agile-blanc-manger-retro/
+- https://momes.parents.fr/bricolages-diy/bricolages-a-imprimer/posters-a-imprimer/affiche-sur-les-emotions-comment-je-me-sens-832296
