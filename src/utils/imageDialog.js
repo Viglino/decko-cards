@@ -9,6 +9,7 @@ function imageDialog(fn) {
   images.forEach(img => {
     element.create('IMG', {
       src: img.path + img.file,
+      title: _T(img.title),
       click: () => {
         fn(img.path + img.file);
         dialog.close()

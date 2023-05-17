@@ -1,6 +1,7 @@
 export default {
   name: 'roleTemplate',
   description: 'roleDesc',
+  format: 'small',
   properties: {
     title: {
       type: 'text',

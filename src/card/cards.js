@@ -8,6 +8,7 @@ const formElt = document.getElementById('form');
 
 const cards = [];
 let current;
+let template = 'emoticard'
 
 /* Card list */
 const menu = document.getElementById('cards')
@@ -33,7 +34,7 @@ function addCard(card) {
     card = card.clone()
   } else {
     card = new Card ({
-      template: 'role'
+      template: template
     })
   }
   const c = {

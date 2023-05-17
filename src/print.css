@@ -44,16 +44,14 @@
     font-size: 1mm;
   }
 
-  [data-format=medium] #cards card {
+  [data-format="medium"] #cards card {
     font-size: 1.035mm;
   }
-  [data-format=medium] #cards ul {
+  [data-format="medium"] #cards ul {
     width: 290mm;
   }
 
-  [data-format=large] #cards card {
+  [data-format="large"] #cards card {
     font-size: 1.2mm;
   }
-  
-
 }

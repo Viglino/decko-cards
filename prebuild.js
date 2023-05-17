@@ -13,7 +13,8 @@ function scanDir(dir) {
       if(/\.json$/.test(file.name)) {
         let data = fs.readFileSync('./assets/img' + dir + '/' + file.name);
         const json = JSON.parse(data)
-        json.id = file.name.replace(/.json$/,'')
+        json.title = file.name.replace(/.json$/,'')
+        json.file = json.file || (json.title + '.svg')
         json.path = './img' + dir +'/'
         const keypath = dir.split('/');
         keypath.shift()

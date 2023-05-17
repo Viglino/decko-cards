@@ -236,3 +236,19 @@
     border-radius: 1em;
   }
 }
+
+[data-format="medium"] {
+  #form {
+    width: calc(100% - 74mm);
+  }
+}
+[data-format="large"] {
+  #form {
+    width: calc(100% - 86mm);
+  }
+}
+[data-format="square"] {
+  #form {
+    width: calc(100% - 98mm);
+  }
+}

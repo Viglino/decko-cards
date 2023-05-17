@@ -10,15 +10,25 @@ card {
   box-sizing: border-box;
   font-size: 1mm;
 }
-[data-format=small] card {
+[data-format="small"] card {
   font-size: 1mm;
 }
-[data-format=medium] card {
+[data-format="medium"] card {
   font-size: 1.035mm;
 }
-[data-format=large] card {
+[data-format="large"] card {
   font-size: 1.2mm;
 }
+
+[data-format="squares"] card {
+  width: 70em;
+  height: 70em;
+}
+[data-format="square"] card {
+  width: 96em;
+  height: 96em;
+}
+
 card p  {
   font-size: 5em;
   margin: 0;
@@ -38,6 +48,9 @@ card > * > .border {
   box-sizing: border-box;
   border-radius: 2em;
   pointer-events: none;
+}
+card.noBorder > * > .border {
+  display: none;
 }
 card > back > .border {
   background-color: currentColor;

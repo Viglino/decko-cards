@@ -39,11 +39,13 @@ function calcTranform(elt, transform) {
  */
 class Card {
   constructor(options) {
+    console.log(options)
     options = options || {};
-    const tmp = templates[options.templates] ? options.templates : 'role';
+    const tmp = templates[options.template] ? options.template : 'role';
     const template = templates[tmp];
     this.element = element.create('CARD', {
       html: template.html,
+      className: template.className || '',
       parent: options.parent
     })
     this.element.dataset.template = tmp;
@@ -57,6 +59,7 @@ class Card {
       parent: this.element.querySelector('back')
     })
     // Properties
+    this.format = template.format || 'small';
     this.properties = JSON.parse(JSON.stringify(options.properties || template.properties))
     this.back = JSON.parse(JSON.stringify(options.back || template.back))
     this.style = JSON.parse(JSON.stringify(options.style || {}));
@@ -67,6 +70,8 @@ class Card {
 
 Card.prototype.export = function() {
   return JSON.stringify({
+    className: this.element.className,
+    format: this.format,
     template: this.element.dataset.template,
     properties: this.properties,
     back: this.back,
@@ -97,6 +102,7 @@ Card.prototype.copy = function() {
 
 /** Render the card */
 Card.prototype.render = function() {
+  document.body.dataset.format = this.format || 'small'
   // Card style
   this.borderElt.style.color = this.style.borderColor || '#fff';
   // Back style
