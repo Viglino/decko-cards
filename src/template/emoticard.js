@@ -4,14 +4,6 @@ export default {
   className: 'noBorder',
   format: 'squares',
   properties: {
-    title: {
-      type: 'text',
-      default: 'Emotion',
-      fontSize: 10,
-      style: {
-        color: '#000000',
-      }
-    },
     background: {
       type: 'back',
       style: {
@@ -23,6 +15,14 @@ export default {
     },
     mouth: {
       type: 'image',
+    },
+    title: {
+      type: 'text',
+      default: 'Emotion',
+      fontSize: 10,
+      style: {
+        color: '#000000',
+      }
     },
   },
   back: {

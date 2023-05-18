@@ -66,6 +66,18 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "tounge",
+    "file": "tounge.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "surprise",
     "file": "surprise.svg",
     "path": "./img/emoticard/mouth/",
@@ -102,6 +114,42 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "mustache",
+    "file": "mustache.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "laughing",
+    "file": "laughing.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "kiss",
+    "file": "kiss.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "flushed",
     "file": "flushed.svg",
     "path": "./img/emoticard/mouth/",
@@ -126,12 +174,60 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "dali",
+    "file": "dali.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "blush",
+    "file": "blush.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "astonish",
     "file": "astonish.svg",
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
       "mouth"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "wiking",
+    "file": "wiking.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sweat",
+    "file": "sweat.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye"
     ]
   },
   {
@@ -162,8 +258,56 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "pleading",
+    "file": "pleading.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "pale",
     "file": "pale.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "mask",
+    "file": "mask.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "joy",
+    "file": "joy.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "grin",
+    "file": "grin.svg",
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
@@ -200,6 +344,18 @@ export default [
     "copy": "CC-by-SA",
     "title": "crying",
     "file": "crying.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "blink",
+    "file": "blink.svg",
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",

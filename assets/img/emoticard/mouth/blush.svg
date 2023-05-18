@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="eye.svg"
+   sodipodi:docname="blush.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
    version="1.1"
@@ -63,9 +63,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="131.30351"
-     inkscape:cx="-350.79917"
-     inkscape:zoom="0.70820139"
+     inkscape:cy="387.07611"
+     inkscape:cx="353.35429"
+     inkscape:zoom="2.003096"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -80,7 +80,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -89,23 +89,26 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Calque 1">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 90.613934,134.87738 c 0,0 11.987286,11.64167 34.078496,11.64167 22.09121,0 34.07849,-11.64167 34.07849,-11.64167"
+       id="path1027"
+       sodipodi:nodetypes="czc" />
     <g
-       id="g923-3"
-       transform="matrix(4.6002557,0,0,4.6002557,125.5301,-508.99513)">
-      <ellipse
-         style="color:#000000;overflow:visible;fill:#000000;stroke-width:2.81919;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
-         id="path875-3"
-         cx="-7.0145712"
-         cy="133.0159"
-         rx="1.7048267"
-         ry="2.6733906" />
-      <ellipse
-         ry="2.6733906"
-         rx="1.7048267"
-         cy="133.0159"
-         cx="6.6503863"
-         id="path875-2-3"
-         style="color:#000000;overflow:visible;fill:#000000;stroke-width:2.81919;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
+       transform="translate(1.4934847)"
+       id="g860">
+      <circle
+         style="color:#000000;overflow:visible;opacity:0.5;fill:#000000;stroke:none;stroke-width:4.99999;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+         id="path837"
+         cx="165.66496"
+         cy="129.59389"
+         r="10.69906" />
+      <circle
+         r="10.69906"
+         cy="129.59389"
+         cx="80.732918"
+         id="path837-1"
+         style="color:#000000;overflow:visible;opacity:0.5;fill:#000000;stroke:none;stroke-width:4.99999;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
     </g>
   </g>
 </svg>

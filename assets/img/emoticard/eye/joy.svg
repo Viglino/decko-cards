@@ -14,7 +14,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="astonish.svg">
+   sodipodi:docname="joy.svg">
   <defs
      id="defs2">
     <linearGradient
@@ -56,9 +56,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70820138"
-     inkscape:cx="-244.95314"
-     inkscape:cy="-50.855398"
+     inkscape:zoom="0.70820139"
+     inkscape:cx="-77.087601"
+     inkscape:cy="226.01604"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -90,50 +90,18 @@
      id="layer1"
      transform="translate(-49.692425,-37.132853)">
     <g
-       id="g861">
-      <circle
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.84475;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
-         id="path850-9"
-         cx="155.02364"
-         cy="101.02036"
-         r="20.691048" />
-      <circle
-         r="20.691048"
-         cy="101.02036"
-         cx="94.361221"
-         id="path850"
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.84475;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
-    </g>
-    <g
-       transform="translate(-5.5344579,12.015251)"
-       id="g857">
-      <circle
-         style="color:#000000;overflow:visible;fill:#000000;stroke-width:10.9239;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
-         id="path875-3-7"
-         cx="160.55809"
-         cy="89.005112"
-         r="8.272296" />
-      <circle
-         r="8.272296"
-         cy="89.005112"
-         cx="99.895676"
-         id="path875-3"
-         style="color:#000000;overflow:visible;fill:#000000;stroke-width:10.9239;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
-    </g>
-    <g
-       transform="translate(2.8143485)"
-       id="g882"
-       style="stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;opacity:0.5">
+       transform="translate(1.5875295)"
+       id="g864">
       <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 70.033853,80.721626 C 77.754661,65.944417 91.444736,58.77427 105.16905,55.360886"
-         id="path863"
-         sodipodi:nodetypes="cc" />
+         sodipodi:nodetypes="cccccc"
+         d="m 91.381516,101.17657 c -3.94389,0.0375 -7.486441,2.41192 -9.008045,6.03787 2.123772,-1.65344 5.504812,-2.63073 9.101655,-2.63085 3.596844,1.2e-4 6.977884,0.97741 9.101664,2.63085 -1.534882,-3.65707 -5.123671,-6.03779 -9.101664,-6.03787 -0.03119,-1.4e-4 -0.06241,-1.4e-4 -0.09361,0 z"
+         style="color:#000000;overflow:visible;fill:#000000;stroke:#000000;stroke-width:1.88695;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="path875-3-9" />
       <path
-         sodipodi:nodetypes="cc"
-         id="path863-4"
-         d="M 173.7223,80.721626 C 166.0015,65.944416 152.31142,58.774269 138.58711,55.360885"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         id="path875-3-3"
+         style="color:#000000;overflow:visible;fill:#000000;stroke:#000000;stroke-width:1.88695;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         d="m 154.64106,101.17657 c -3.9439,0.0375 -7.48644,2.41191 -9.00806,6.03787 2.12378,-1.65344 5.50483,-2.63073 9.10166,-2.63085 3.59684,1.2e-4 6.97789,0.97741 9.10166,2.63085 -1.53488,-3.65707 -5.12367,-6.03781 -9.10166,-6.03787 -0.0312,-1.5e-4 -0.0624,-1.5e-4 -0.0936,0 z"
+         sodipodi:nodetypes="cccccc" />
     </g>
   </g>
 </svg>

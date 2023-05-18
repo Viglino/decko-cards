@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="eye.svg"
+   sodipodi:docname="kiss.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
    version="1.1"
@@ -63,9 +63,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="131.30351"
-     inkscape:cx="-350.79917"
-     inkscape:zoom="0.70820139"
+     inkscape:cy="330.19315"
+     inkscape:cx="130.48159"
+     inkscape:zoom="1.4164028"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -90,22 +90,25 @@
      inkscape:groupmode="layer"
      inkscape:label="Calque 1">
     <g
-       id="g923-3"
-       transform="matrix(4.6002557,0,0,4.6002557,125.5301,-508.99513)">
-      <ellipse
-         style="color:#000000;overflow:visible;fill:#000000;stroke-width:2.81919;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
-         id="path875-3"
-         cx="-7.0145712"
-         cy="133.0159"
-         rx="1.7048267"
-         ry="2.6733906" />
-      <ellipse
-         ry="2.6733906"
-         rx="1.7048267"
-         cy="133.0159"
-         cx="6.6503863"
-         id="path875-2-3"
-         style="color:#000000;overflow:visible;fill:#000000;stroke-width:2.81919;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
+       transform="translate(2.9105189)"
+       id="g856">
+      <circle
+         style="color:#000000;overflow:visible;opacity:0.5;fill:#000000;stroke:none;stroke-width:5.21785;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+         id="path837"
+         cx="170.69186"
+         cy="129.59389"
+         r="11.165247" />
+      <circle
+         r="11.165247"
+         cy="129.59389"
+         cx="72.871948"
+         id="path837-1"
+         style="color:#000000;overflow:visible;opacity:0.5;fill:#000000;stroke:none;stroke-width:5.21785;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
     </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 119.82731,142.14383 c 2.70869,-8.00748 15.42373,-1.01727 6.73727,5.68138 7.4918,4.74096 -2.25524,12.69682 -6.07683,6.341"
+       id="path840"
+       sodipodi:nodetypes="ccc" />
   </g>
 </svg>
