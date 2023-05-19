@@ -14,7 +14,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="blink.svg">
+   sodipodi:docname="tooth.svg">
   <defs
      id="defs2">
     <linearGradient
@@ -56,11 +56,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70820139"
-     inkscape:cx="103.11512"
-     inkscape:cy="361.0367"
+     inkscape:zoom="1.4164028"
+     inkscape:cx="138.31511"
+     inkscape:cy="238.51582"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g942"
      inkscape:document-rotation="0"
      showgrid="false"
      fit-margin-top="0"
@@ -89,27 +89,31 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-49.692425,-37.132853)">
-    <ellipse
-       style="color:#000000;overflow:visible;fill:#000000;stroke-width:12.969;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
-       id="path875-3"
-       cx="91.899521"
-       cy="102.91202"
-       rx="7.842639"
-       ry="12.298281" />
-    <path
-       id="path875-3-3"
-       style="color:#000000;overflow:visible;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       d="m 154.64106,101.17657 c -3.9439,0.0375 -7.48644,2.41191 -9.00806,6.03787 2.12378,-1.65344 5.50483,-2.63073 9.10166,-2.63085 3.59684,1.2e-4 6.97789,0.97741 9.10166,2.63085 -1.53488,-3.65707 -5.12367,-6.03781 -9.10166,-6.03787 -0.0312,-1.5e-4 -0.0624,-1.5e-4 -0.0936,0 z"
-       sodipodi:nodetypes="cccccc" />
-    <path
-       sodipodi:nodetypes="cc"
-       id="path898-16"
-       d="m 75.085424,86.503919 c 2.669088,-7.291037 9.085446,-9.717074 14.347349,-7.782482"
-       style="opacity:0.5;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.60026;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       style="opacity:0.5;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.60026;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 166.81336,87.562253 c -8.27308,-0.379455 -18.61222,1.490896 -22.56653,4.733085"
-       id="path898-1-4"
-       sodipodi:nodetypes="cc" />
+    <g
+       id="g919"
+       transform="translate(-5.7018555,1.0583333)" />
+    <g
+       id="g942"
+       transform="translate(-2.6493967,-2.3775695)">
+      <g
+         id="g859">
+        <path
+           id="path1004"
+           style="color:#000000;overflow:visible;fill:#000000;stroke:#000000;stroke-width:13.3353;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+           d="M 246.98242 349.14453 C 200.12994 349.90999 160.87246 352.30756 160.86914 356.44727 C 160.86913 373.18933 164.24828 389.13741 170.32422 403.67578 C 180.15981 427.21018 197.17375 446.92506 218.56641 460.32031 L 348.36328 460.32031 C 369.7559 446.92506 386.76989 427.21018 396.60547 403.67578 C 402.6814 389.13741 406.06055 373.18933 406.06055 356.44727 C 398.90419 352.53086 362.55309 350.14921 319.94531 349.22852 L 319.94531 403.67578 L 246.98242 403.67578 L 246.98242 349.14453 z "
+           transform="matrix(0.26458333,0,0,0.26458333,52.341822,39.510422)" />
+        <path
+           id="path850"
+           style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:13.3353;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+           d="m 246.98242,349.14453 v 58.53125 h 72.96289 v -58.44726 c -14.13341,-0.30541 -28.9503,-0.45132 -43.625,-0.4375 -10.07412,0.01 -19.67376,0.19562 -29.33789,0.35351 z"
+           transform="matrix(0.26458333,0,0,0.26458333,52.341822,39.510422)"
+           sodipodi:nodetypes="ccccsc" />
+        <path
+           sodipodi:nodetypes="czcsc"
+           d="m 144.51287,161.3035 c 0,0 -5.09103,-7.47826 -17.17105,-7.40833 -12.08002,0.0699 -17.17104,7.40833 -17.17104,7.40833 4.98396,3.12078 10.85702,4.95371 17.17104,4.95371 6.31402,0 12.18709,-1.83293 17.17105,-4.95371 z"
+           style="color:#000000;overflow:visible;fill:#d40000;stroke:#000000;stroke-width:3.5283;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+           id="path986" />
+      </g>
+    </g>
   </g>
 </svg>

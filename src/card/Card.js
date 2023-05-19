@@ -39,7 +39,6 @@ function calcTranform(elt, transform) {
  */
 class Card {
   constructor(options) {
-    console.log(options)
     options = options || {};
     const tmp = templates[options.template] ? options.template : 'role';
     const template = templates[tmp];
@@ -104,6 +103,7 @@ Card.prototype.copy = function() {
 Card.prototype.render = function() {
   document.body.dataset.format = this.format || 'small'
   // Card style
+  this.element.style.color = this.style.borderColor || '#fff';
   this.borderElt.style.color = this.style.borderColor || '#fff';
   // Back style
   this.backElt.style.backgroundColor = this.style.backColor || '#fff';
@@ -196,7 +196,7 @@ Card.prototype.getForm = function(elt) {
     value: this.style.borderColor || '#ffffff',
     change: (e) => {
       this.style.borderColor = e.target.value || '#ffffff'
-      this.borderElt.style.color = this.style.borderColor || '#fff';
+      this.element.style.color = this.borderElt.style.color = this.style.borderColor || '#fff';
     },
     parent: li
   })

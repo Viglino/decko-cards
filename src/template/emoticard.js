@@ -4,12 +4,6 @@ export default {
   className: 'noBorder',
   format: 'squares',
   properties: {
-    background: {
-      type: 'back',
-      style: {
-        color: '#ff0000'
-      }
-    },
     eye: {
       type: 'image',
     },

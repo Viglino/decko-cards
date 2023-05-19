@@ -14,7 +14,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="sweat.svg">
+   sodipodi:docname="sleeping.svg">
   <defs
      id="defs2">
     <linearGradient
@@ -57,8 +57,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.001548"
-     inkscape:cx="457.31924"
-     inkscape:cy="111.14222"
+     inkscape:cx="360.32024"
+     inkscape:cy="24.019532"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -91,6 +91,7 @@
      transform="translate(-49.692425,-37.132853)">
     <g
        style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="matrix(1,0,0,-1,1.5875295,208.3907)"
        id="g864">
       <path
          sodipodi:nodetypes="cccccc"
@@ -103,10 +104,44 @@
          d="m 154.64106,101.17657 c -3.9439,0.0375 -7.48644,2.41191 -9.00806,6.03787 2.12378,-1.65344 5.50483,-2.63073 9.10166,-2.63085 3.59684,1.2e-4 6.97789,0.97741 9.10166,2.63085 -1.53488,-3.65707 -5.12367,-6.03781 -9.10166,-6.03787 -0.0312,-1.5e-4 -0.0624,-1.5e-4 -0.0936,0 z"
          sodipodi:nodetypes="cccccc" />
     </g>
-    <path
-       sodipodi:nodetypes="cccsc"
-       d="m 171.19398,54.541828 c 2.91142,8.955067 -2.55621,21.607764 1.511,28.956219 3.6639,6.346269 11.77883,8.520652 18.125,4.856576 6.34626,-3.663909 9.04618,-10.867682 4.85657,-18.124989 -4.42872,-7.671374 -15.92517,-10.243759 -24.49257,-15.687806 z"
-       style="color:#000000;overflow:visible;fill:#00bcf2;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="path839" />
+    <g
+       transform="translate(0.0993805,-5.8208336)"
+       id="g943">
+      <path
+         sodipodi:nodetypes="cc"
+         id="path898-16"
+         d="M 80.500999,97.599243 C 82.377564,93.214124 91.831927,87.485908 98.282615,87.703366"
+         style="opacity:0.5;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.60026;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="opacity:0.5;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.60026;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 168.68509,97.599243 C 166.80852,93.214124 157.35416,87.485908 150.90347,87.703366"
+         id="path898-16-8"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="g911"
+       style="opacity:0.5">
+      <g
+         transform="translate(0.66043597,1.9813079)"
+         style="font-weight:bold;font-size:50.8px;line-height:100%;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="text847"
+         aria-label="Z">
+        <path
+           sodipodi:nodetypes="ccccccccccc"
+           id="path849"
+           style="fill:#000000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 124.46462,64.746079 v -2.97039 l 8.56629,-8.992428 h -8.65674 v -2.759014 h 12.99552 v 2.558762 l -8.93342,9.415181 h 9.27829 v 2.747889 z" />
+      </g>
+      <path
+         d="m 172.36283,73.713548 v -4.847459 l 13.97956,-14.674986 h -14.12717 v -4.502509 h 21.20774 v 4.175713 l -14.57869,15.364887 h 15.1415 v 4.484354 z"
+         style="font-weight:bold;font-size:50.8px;line-height:100%;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path849-3"
+         sodipodi:nodetypes="ccccccccccc" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         id="path849-3-2"
+         style="font-weight:bold;font-size:50.8px;line-height:100%;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 145.41704,64.995793 V 60.148334 L 159.3966,45.473348 h -14.12717 v -4.502509 h 21.20774 v 4.175713 l -14.57869,15.364887 h 15.1415 v 4.484354 z" />
+    </g>
   </g>
 </svg>
