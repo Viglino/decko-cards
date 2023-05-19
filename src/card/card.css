@@ -49,12 +49,16 @@ card > * > .border {
   border-radius: 2em;
   pointer-events: none;
 }
-card.noBorder > * > .border {
+card.noBorder > front > .border {
   display: none;
 }
 card > back > .border {
   background-color: currentColor;
   z-index: 0;
+}
+card.noBorder > back > .border {
+  border: 0;
+  box-shadow: unset;
 }
 
 card > * > * {

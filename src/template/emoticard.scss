@@ -1,43 +1,44 @@
-card[data-template="emoticard"] front {
+card[data-template="emoticard"] {
+  font-family: Bangers, cursive;
 
-  [data-prop="title"] {
-    font-family: Indie Flower, cursive;
-    font-weight: bold;
-    bottom: 1.5em;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    white-space: pre;
+  front {
+    [data-prop="title"] {
+      bottom: 1.5em;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      white-space: pre;
+    }
+    [data-prop="background"] {
+      background-color: currentColor;
+      inset: 0;
+    }
+    [data-prop="eye"],
+    [data-prop="mouth"] {
+      inset: 0;
+    }
+    [data-prop="eye"] img,
+    [data-prop="mouth"] img {
+      width: 80%;
+    }
   }
-  [data-prop="background"] {
-    background-color: currentColor;
-    inset: 0;
-  }
-  [data-prop="eye"],
-  [data-prop="mouth"] {
-    inset: 0;
-  }
-  [data-prop="eye"] img,
-  [data-prop="mouth"] img {
-    width: 80%;
-  }
-}
 
-card[data-template="role"] back {
-  [data-prop="logo"] {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-  }
-  [data-prop="deck"] {
-    top: calc(50% + 20em);
-    left: 50%;
-    line-height: 5em;
-    padding: 0 .5em;
-    border-radius: .5em;;
-    text-align: center;
-    z-index: 2;
+  back {
+    [data-prop="logo"] {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+    }
+    [data-prop="deck"] {
+      top: calc(50% + 20em);
+      left: 50%;
+      line-height: 5em;
+      padding: 0 .5em;
+      border-radius: .5em;;
+      text-align: center;
+      z-index: 2;
+    }
   }
 }
