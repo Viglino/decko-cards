@@ -9,6 +9,7 @@ card {
   box-shadow: .3em .3em 1em rgba(0,0,0,.5);
   box-sizing: border-box;
   font-size: 1mm;
+  white-space: normal;
 }
 card[data-format="small"] {
   font-size: 1mm;

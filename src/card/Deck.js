@@ -48,6 +48,7 @@ Deck.prototype.addCard = function(card) {
   const c = {
     li: element.create('LI', {
       html: card.copy(),
+      'data-pos': this.cards.length,
       click: () => {
         this.selectCard(c)
       },
@@ -57,6 +58,36 @@ Deck.prototype.addCard = function(card) {
   }
   this.cards.push(c)
   this.selectCard(c);
+  // Move card
+  function onmove(e) {
+    let elt = document.elementFromPoint(e.clientX, e.clientY)
+    while ((elt = elt.parentElement) && elt.tagName !== 'CARD');
+    if (elt && elt.parentElement.tagName == 'LI') {
+      const lhover = elt.parentElement
+      if (lhover !== c.li) {
+        const pos = parseInt(c.li.dataset.pos);
+        const npos = parseInt(lhover.dataset.pos);
+        if (pos == npos-1) {
+          lhover.parentNode.insertBefore(lhover, c.li)
+          lhover.dataset.pos = pos
+          c.li.dataset.pos = npos
+        } else if (pos == npos+1) {
+          lhover.parentNode.insertBefore(c.li, lhover)
+          lhover.dataset.pos = pos
+          c.li.dataset.pos = npos
+        }
+      }
+    }
+  }
+  function onup() {
+    document.removeEventListener('pointermove', onmove)
+    document.removeEventListener('pointerup', onup)
+  }
+  c.li.addEventListener('pointerdown', e => {
+    e.preventDefault();
+    document.addEventListener('pointermove', onmove)
+    document.addEventListener('pointerup', onup)
+  })
 }
 
 
@@ -76,7 +107,6 @@ Deck.prototype.selectCard = function(c) {
   if (!this.current) return; 
   c.li.dataset.select = ''
   cardElt.appendChild(c.card.element)
-
 
   // Font / back
   const fback = element.create('BUTTON', {

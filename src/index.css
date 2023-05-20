@@ -200,7 +200,16 @@ footer {
   z-index: 1;
   box-shadow: 2px 2px 4px 2px rgba(0,0,0,.5);
 }
+[data-role="dialog"].choice .list {
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 1em;
+  margin: -1em;
+}
 [data-role="dialog"].choice .info {
-  position: absolute;
-  bottom: 2em;
+  height: 2em;
+  line-height: 2em;
+  background-color: #eee;
+  text-align: center;
+  margin: 0 -1em -1em;
 }

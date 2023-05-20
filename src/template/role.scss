@@ -29,16 +29,16 @@ card[data-template="role"] front {
     background-color: #fff;
     box-sizing: border-box;
   }
-  [data-prop="logo"][data-alt="box"] {
+  [data-prop="icon"][data-alt="box"] {
     border-radius: 0;
   }
-  [data-prop="logo"][data-alt="image"] {
+  [data-prop="icon"][data-alt="image"] {
     width: 50%;
     height: 40em;
     background-color: transparent;
     border: 0;
   }
-  [data-prop="logo"][data-alt="hidden"] {
+  [data-prop="icon"][data-alt="hidden"] {
     display: none;
   }
 

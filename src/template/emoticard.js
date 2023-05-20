@@ -17,7 +17,7 @@ export default {
     },
     title: {
       type: 'text',
-      default: 'Emotion',
+      default: 'Emoticards',
       fontSize: 10,
       style: {
         color: '#000000',
