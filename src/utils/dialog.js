@@ -49,7 +49,11 @@ class Dialog {
     this.element.back.className = options.className || ''
     // content
     this.element.content.innerHTML = '';
-    this.element.content.appendChild(options.html)
+    if (options.html instanceof Node) {
+      this.element.content.appendChild(options.html)
+    } else {
+      this.element.content = options.html
+    }
     // Buttons
     this.element.buttons.innerHTML = '';
     Object.keys(options.buttons).forEach(b => {

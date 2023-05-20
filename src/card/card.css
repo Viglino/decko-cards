@@ -10,21 +10,21 @@ card {
   box-sizing: border-box;
   font-size: 1mm;
 }
-[data-format="small"] card {
+card[data-format="small"] {
   font-size: 1mm;
 }
-[data-format="medium"] card {
+card[data-format="medium"] {
   font-size: 1.035mm;
 }
-[data-format="large"] card {
+card[data-format="large"] {
   font-size: 1.2mm;
 }
 
-[data-format="squares"] card {
+card[data-format="squares"] {
   width: 70em;
   height: 70em;
 }
-[data-format="square"] card {
+card[data-format="square"] {
   width: 96em;
   height: 96em;
 }

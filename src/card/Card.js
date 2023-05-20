@@ -108,6 +108,7 @@ Card.prototype.copy = function() {
 /** Render the card */
 Card.prototype.render = function() {
   document.body.dataset.format = this.format || 'small'
+  this.element.dataset.format = this.format || 'small'
   // Card style
   this.element.style.color = this.style.borderColor || '#fff';
   this.borderElt.style.color = this.style.borderColor || '#fff';
