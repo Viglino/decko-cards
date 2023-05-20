@@ -61,7 +61,7 @@ class Card {
     this.format = template.format || 'small';
     this.properties = JSON.parse(JSON.stringify(options.properties || template.properties))
     this.back = JSON.parse(JSON.stringify(options.back || template.back))
-    this.style = JSON.parse(JSON.stringify(options.style || {}));
+    this.style = JSON.parse(JSON.stringify(options.style || template.style || {}));
     // Set parameters
     this.render()
   }
@@ -82,12 +82,18 @@ Card.prototype.export = function() {
  * @returns {Card}
  */
 Card.prototype.clone = function() {
-  const c = new Card();
-  c.properties = JSON.parse(JSON.stringify(this.properties))
-  c.back = JSON.parse(JSON.stringify(this.back))
-  c.style = JSON.parse(JSON.stringify(this.style))
+  const c = new Card({
+    template: this.getTemplate(),
+    properties: this.properties,
+    back: this.back,
+    style: this.style
+  });
   c.render()
   return c;
+}
+
+Card.prototype.getTemplate = function() {
+  return this.element.dataset.template
 }
 
 /** Returns an HTML copy of the card
@@ -287,7 +293,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
         element.create('BUTTON', {
           className: 'image',
           click: () => {
-            imageDialog(url => {
+            imageDialog(img.value, url => {
               img.value = url
               img.dispatchEvent(new Event('change'))
             })

@@ -3,6 +3,9 @@ export default {
   description: 'roleDesc',
   className: 'noBorder',
   format: 'squares',
+  style: {
+    borderColor: '#ffc000'
+  },
   properties: {
     eye: {
       type: 'image',

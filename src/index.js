@@ -7,4 +7,7 @@ import './hatching.css'
 import './print.css'
 
 import './i18n/config.js'
-import './card/cards.js'
+// import './card/cards.js'
+import Deck from './card/Deck'
+
+new Deck('emoticard');
