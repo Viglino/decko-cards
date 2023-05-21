@@ -38,6 +38,7 @@ Deck.prototype.removeCard = function(card) {
 
 /** Add a new card */
 Deck.prototype.addCard = function(card) {
+  const cards = this.cards;
   if (card) {
     card = card.clone()
   } else {
@@ -49,9 +50,6 @@ Deck.prototype.addCard = function(card) {
     li: element.create('LI', {
       html: card.copy(),
       'data-pos': this.cards.length,
-      click: () => {
-        this.selectCard(c)
-      },
       parent: this.cardList
     }),
     card: card
@@ -67,14 +65,16 @@ Deck.prototype.addCard = function(card) {
       if (lhover !== c.li) {
         const pos = parseInt(c.li.dataset.pos);
         const npos = parseInt(lhover.dataset.pos);
-        if (pos == npos-1) {
-          lhover.parentNode.insertBefore(lhover, c.li)
+        if (pos == npos-1 || pos == npos+1) {
+          if (pos == npos-1) {
+            lhover.parentNode.insertBefore(lhover, c.li)
+          } else {
+            lhover.parentNode.insertBefore(c.li, lhover)
+          }
           lhover.dataset.pos = pos
           c.li.dataset.pos = npos
-        } else if (pos == npos+1) {
-          lhover.parentNode.insertBefore(c.li, lhover)
-          lhover.dataset.pos = pos
-          c.li.dataset.pos = npos
+          cards[pos] = cards[npos]
+          cards[npos] = c
         }
       }
     }
@@ -85,6 +85,7 @@ Deck.prototype.addCard = function(card) {
   }
   c.li.addEventListener('pointerdown', e => {
     e.preventDefault();
+    this.selectCard(c)
     document.addEventListener('pointermove', onmove)
     document.addEventListener('pointerup', onup)
   })
