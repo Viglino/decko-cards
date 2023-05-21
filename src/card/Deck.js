@@ -10,7 +10,7 @@ const menu = document.getElementById('cards')
 /** Deck class
  */
 class Deck {
-  constructor(template) {
+  constructor(template, cards) {
     this.cards = [];
     this.current = undefined;
     this.template = template
@@ -25,6 +25,7 @@ class Deck {
       parent: menu 
     })
     this.cardList = element.create('UL', { parent: menu })
+    if (cards) cards.forEach(c => this.addCard(new Card(c)))
   }
 }
 
@@ -161,7 +162,10 @@ Deck.prototype.selectCard = function(c) {
 
 /** Save the deck */
 Deck.prototype.save = function() {
-  const save = { cards: [] };
+  const save = {
+    template: this.template,
+    cards: []
+  };
   this.cards.forEach(c => save.cards.push(JSON.parse(c.card.export())))
   var blob = new Blob([JSON.stringify(save)], {type: "text/plain;charset=utf-8"});
   saveAs(blob, "card.card");

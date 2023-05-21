@@ -1,14 +1,18 @@
 card[data-template="emoticard"] {
-  font-family: Bangers, cursive;
+  p {
+    font-family: Bangers, cursive;
+    line-height: 1.4em;
+  }
 
   front {
     [data-prop="title"] {
-      bottom: 1.5em;
+      bottom: 0;
       left: 0;
       width: 100%;
       text-align: center;
       white-space: pre;
     }
+
     [data-prop="background"] {
       background-color: currentColor;
       inset: 0;
@@ -30,7 +34,15 @@ card[data-template="emoticard"] {
       height: 100%;
       top: 50%;
       left: 50%;
+      overflow: hidden;
     }
+    [data-prop="logo"][data-alt="circle"] {
+      border-radius: 50%;
+    }
+    [data-prop="logo"][data-alt="hidden"] {
+      display: none;
+    }
+
     [data-prop="deck"] {
       top: calc(50% + 20em);
       left: 50%;

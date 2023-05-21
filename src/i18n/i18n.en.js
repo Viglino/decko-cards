@@ -17,6 +17,7 @@ export default {
   back: 'back',
   duplicate: 'duplicate',
   delete: 'delete',
+  loadfile: 'Load a card file (.card)',
   ok: 'OK',
   cancel: 'Cancel'
 }

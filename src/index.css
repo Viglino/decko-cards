@@ -211,5 +211,35 @@ footer {
   line-height: 2em;
   background-color: #eee;
   text-align: center;
-  margin: 0 -1em -1em;
+  margin: 0 -1em;
+}
+
+[data-role="dialog"].choice .file {
+  position: relative;
+  width: 20em;
+  max-width: 100%;
+  margin: 1em auto 0;
+}
+[data-role="dialog"].choice .file input[type="file"]{
+  padding: 5em 0;
+  width: 100%;
+}
+
+[data-role="dialog"].choice .file label {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #fff;
+  pointer-events: none;
+  border: 8px dashed #ddd;
+  text-align: center;
+  padding-top: 7em;
+  background-image: url('../img/logo.png');
+  background-position: center;
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+}
+[data-role="dialog"].choice .file[data-drop] label {
+  background-color: #eee;
+  border-color: #05f;
 }

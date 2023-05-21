@@ -17,6 +17,7 @@ export default {
   back: 'dos',
   duplicate: 'dupliquer',
   delete: 'supprimer',
+  loadfile: 'Charger un fichier (.card)',
   ok: 'OK',
   cancel: 'Annuler'
 }

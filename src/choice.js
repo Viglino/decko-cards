@@ -24,6 +24,37 @@ Object.keys(templates).forEach(k => {
   })
 });
 const info = element.create('DIV', { className: 'info', parent: content })
+const file = element.create('DIV', {
+  className: 'file',
+  parent: content
+})
+const load = element.create('INPUT', { 
+  type: 'file',
+  change: (e) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const json = JSON.parse(e.target.result)
+      new Deck(json.template, json.cards);
+      dialog.close();
+    };
+    reader.readAsText(load.files[0]);
+  },
+  parent: file
+})
+element.create('LABEL', {
+  html: _T('loadfile'),
+  parent: file
+})
+file.addEventListener('dragenter', e => {
+  e.stopPropagation();
+  e.preventDefault();
+  file.dataset.drop = ''
+}, false);
+file.addEventListener('dragleave', e => {
+  e.stopPropagation();
+  e.preventDefault();
+  delete file.dataset.drop
+}, false);
 
 dialog.show({
   title: 'Decko\'cardS',
@@ -33,7 +64,6 @@ dialog.show({
     select: _T('about')
   },
   callback: b => {
-    const deck = new Deck('emoticard');
-    deck.addCard();
+    dialog.replay()
   }
 })

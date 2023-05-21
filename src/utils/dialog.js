@@ -70,6 +70,10 @@ class Dialog {
     })
     delete this.element.back.dataset.hidden;
   }
+  /** Replay */
+  replay() {
+    setTimeout(() => { delete this.element.back.dataset.hidden })
+  }
 }
 
 const dialog = new Dialog
