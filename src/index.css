@@ -108,8 +108,13 @@ main {
   z-index: 2;
   transform: scale(1.05) /* rotate(-1.5deg) */;
 }
+#cards li[data-select] card {
+  touch-action: none;
+}
+
 #cards card {
   font-size: 1px;
+  touch-action: none;
 }
 
 #card {

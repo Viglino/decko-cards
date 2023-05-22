@@ -81,14 +81,16 @@ Deck.prototype.addCard = function(card) {
     }
   }
   function onup() {
-    document.removeEventListener('pointermove', onmove)
-    document.removeEventListener('pointerup', onup)
+    window.removeEventListener('pointermove', onmove)
+    window.removeEventListener('pointerup', onup)
+    window.removeEventListener('pointercancel', onup)
   }
   c.li.addEventListener('pointerdown', e => {
     e.preventDefault();
     this.selectCard(c)
-    document.addEventListener('pointermove', onmove)
-    document.addEventListener('pointerup', onup)
+    window.addEventListener('pointermove', onmove)
+    window.addEventListener('pointerup', onup)
+    window.addEventListener('pointercancel', onup)
   })
 }
 
