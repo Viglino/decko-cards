@@ -19,6 +19,9 @@ function scanDir(dir) {
         const keypath = dir.split('/');
         keypath.shift()
         json.keywords = (json.keywords || []).concat(keypath)
+        json.title.split('-').forEach(k => {
+          if (k.length>2) json.keywords.push(k)
+        })
         files.unshift(json)
       }
     }

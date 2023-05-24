@@ -1,54 +1,53 @@
 // List of files in assets/img
 export default [
   {
-    "file": "star.svg",
     "author": "Viglino",
-    "keywords": [
-      "star",
-      "emoji",
-      "symbol"
-    ],
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
     "title": "star",
-    "path": "./img/symbol/"
+    "file": "star.svg",
+    "path": "./img/symbol/",
+    "keywords": [
+      "symbol",
+      "star"
+    ]
   },
   {
-    "file": "earth-eye.svg",
     "author": "Viglino",
-    "keywords": [
-      "earth",
-      "eye",
-      "symbol"
-    ],
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
     "title": "earth-eye",
-    "path": "./img/symbol/"
+    "file": "earth-eye.svg",
+    "path": "./img/symbol/",
+    "keywords": [
+      "symbol",
+      "earth",
+      "eye"
+    ]
   },
   {
-    "file": "joker.svg",
     "author": "Viglino",
-    "keywords": [
-      "joker",
-      "people"
-    ],
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
     "title": "joker",
-    "path": "./img/people/"
+    "file": "joker.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "joker"
+    ]
   },
   {
-    "file": "joker-2.svg",
     "author": "Viglino",
-    "keywords": [
-      "joker",
-      "people"
-    ],
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
     "title": "joker-2",
-    "path": "./img/people/"
+    "file": "joker-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "joker"
+    ]
   },
   {
     "author": "Viglino",
@@ -59,7 +58,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "yum"
     ]
   },
   {
@@ -71,7 +71,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "yawn"
     ]
   },
   {
@@ -83,7 +84,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "woozy"
     ]
   },
   {
@@ -95,7 +97,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "vampire"
     ]
   },
   {
@@ -107,7 +110,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "tounge"
     ]
   },
   {
@@ -119,7 +123,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "tooth"
     ]
   },
   {
@@ -131,7 +136,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "surprise"
     ]
   },
   {
@@ -143,7 +149,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "steam"
     ]
   },
   {
@@ -155,7 +162,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "sneez"
     ]
   },
   {
@@ -167,7 +175,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "smirk"
     ]
   },
   {
@@ -179,7 +188,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "smile"
     ]
   },
   {
@@ -191,7 +201,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "sad"
     ]
   },
   {
@@ -203,7 +214,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "rabbit"
     ]
   },
   {
@@ -215,7 +227,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "nauseated"
     ]
   },
   {
@@ -227,7 +240,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "mustache"
     ]
   },
   {
@@ -239,7 +253,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "laughing"
     ]
   },
   {
@@ -251,7 +266,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "kiss"
     ]
   },
   {
@@ -263,7 +279,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "grin"
     ]
   },
   {
@@ -275,7 +292,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "grimacing"
     ]
   },
   {
@@ -287,7 +305,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "flushed"
     ]
   },
   {
@@ -299,7 +318,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "exhausted"
     ]
   },
   {
@@ -311,7 +331,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "downcast"
     ]
   },
   {
@@ -323,7 +344,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "dali"
     ]
   },
   {
@@ -335,7 +357,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "confused"
     ]
   },
   {
@@ -347,7 +370,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "confounded"
     ]
   },
   {
@@ -359,7 +383,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "confined"
     ]
   },
   {
@@ -371,7 +396,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "blush"
     ]
   },
   {
@@ -383,7 +409,8 @@ export default [
     "path": "./img/emoticard/mouth/",
     "keywords": [
       "emoticard",
-      "mouth"
+      "mouth",
+      "astonish"
     ]
   },
   {
@@ -395,7 +422,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "wiking"
     ]
   },
   {
@@ -407,7 +435,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "tired"
     ]
   },
   {
@@ -419,7 +448,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "sweat"
     ]
   },
   {
@@ -431,7 +461,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "surprise"
     ]
   },
   {
@@ -443,7 +474,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "sunglasses"
     ]
   },
   {
@@ -455,7 +487,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "sleeping"
     ]
   },
   {
@@ -467,7 +500,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "silly"
     ]
   },
   {
@@ -479,7 +513,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "sad"
     ]
   },
   {
@@ -491,7 +526,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "rolling"
     ]
   },
   {
@@ -503,7 +539,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "pleading"
     ]
   },
   {
@@ -515,7 +552,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "pale"
     ]
   },
   {
@@ -527,7 +565,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "monocle"
     ]
   },
   {
@@ -539,7 +578,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "mask"
     ]
   },
   {
@@ -551,7 +591,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "joy"
     ]
   },
   {
@@ -563,7 +604,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "grin"
     ]
   },
   {
@@ -575,7 +617,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "glasses"
     ]
   },
   {
@@ -587,7 +630,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "flushed"
     ]
   },
   {
@@ -599,6 +643,7 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
+      "eye",
       "eye"
     ]
   },
@@ -611,7 +656,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "down"
     ]
   },
   {
@@ -623,7 +669,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "crying"
     ]
   },
   {
@@ -635,7 +682,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "blink"
     ]
   },
   {
@@ -647,7 +695,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "astonish"
     ]
   },
   {
@@ -659,7 +708,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "angry"
     ]
   },
   {
@@ -671,7 +721,8 @@ export default [
     "path": "./img/emoticard/eye/",
     "keywords": [
       "emoticard",
-      "eye"
+      "eye",
+      "alien"
     ]
   }
 ]
