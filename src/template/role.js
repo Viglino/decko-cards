@@ -50,7 +50,8 @@ export default {
       style: {
         img_width: 30,
         img_top: 50,
-        img_left: 20
+        img_left: 20,
+        img_rotate: 0
       }
     },
     name: {

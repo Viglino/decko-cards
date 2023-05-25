@@ -10,6 +10,19 @@ function getHTML(t) {
   return t.replace(/\n/g, '<br/>')
 }
 
+function resetButton(elt, val, parent) {
+  element.create('BUTTON', {
+    html: '↻',
+    className: 'reset',
+    title: 'reset',
+    click: () => {
+      elt.value = val;
+      elt.dispatchEvent(new Event('input'))
+    },
+    parent: parent
+  })
+}
+
 function calcTranform(elt, transform) {
   const tr = [];
   Object.keys(transform).forEach(k => {
@@ -356,6 +369,25 @@ Card.prototype.getFromProperties = function(properties, elt) {
             })
             break;
           }
+          case 'img_rotate': {
+            const angle = element.create('INPUT', {
+              type: 'range',
+              className: 'angle',
+              min: -180,
+              max: 180,
+              step: .1,
+              value: prop.style[s],
+              on: {
+                input: (e) => {
+                  prop.style[s] = e.target.value
+                  target.querySelector('img').style.transform = 'translate(-50%, -50%) rotate('+prop.style[s]+'deg)'
+                }
+              },
+              parent: label
+            })
+            resetButton(angle, 0, label)
+            break;
+          }
           case 'img_top':
           case 'img_left':
           case 'img_width': {
@@ -394,15 +426,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
                     },
                     parent: label
                   })
-                  element.create('BUTTON', {
-                    html: '↻',
-                    className: 'reset',
-                    click: () => {
-                      scale.value = 1;
-                      scale.dispatchEvent(new Event('input'))
-                    },
-                    parent: label
-                  })
+                  resetButton(scale, 1, label)
                   break;
                 }
                 case 'skewY': 
@@ -422,15 +446,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
                     },
                     parent: label
                   })
-                  element.create('BUTTON', {
-                    html: '↻',
-                    className: 'reset',
-                    click: () => {
-                      angle.value = 0;
-                      angle.dispatchEvent(new Event('input'))
-                    },
-                    parent: label
-                  })
+                  resetButton(angle, 0, label)
                   break;
                 }
                 default: {
