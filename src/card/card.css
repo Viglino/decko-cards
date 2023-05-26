@@ -10,6 +10,7 @@ card {
   box-sizing: border-box;
   font-size: 1mm;
   white-space: normal;
+  background-color: #fff;
 }
 card[data-format="small"] {
   font-size: 1mm;
@@ -86,6 +87,29 @@ card [data-type="image"] img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+card .copyright {
+  z-index: 1000;
+  box-sizing: border-box;
+  white-space: nowrap;
+  background-color: currentColor;
+  border-radius: .3em;
+  /*
+  top: 80%;
+  left: calc(100% - 0.1em);
+  transform-origin: 0% 100%;
+  transform: rotate(-90deg) translateX(-20%) scaleX(.9);
+  */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(.85);
+}
+card .copyright p {
+  color: #000;
+  padding: 0 .8em;
+  font-size: 2.5em;
+  line-height: 1.2em!important;
 }
 
 /* Flip front / back */

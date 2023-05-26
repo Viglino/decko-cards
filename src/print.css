@@ -2,6 +2,13 @@
   body > * {
     display: none;
   }
+  body:before,
+  body:after,
+  body > *:before,
+  body > *:after {
+    display: none;
+  }
+
   body > main {
     display: block;
     margin: 0;

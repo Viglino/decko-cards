@@ -61,12 +61,25 @@ class Card {
       parent: options.parent
     })
     this.element.dataset.template = tmp;
+    // Copyright
+    this.copyElt = this.element.querySelector('.copyright')
+    if (!this.copyElt) {
+      this.copyElt = element.create('DIV', {
+        className: 'copyright',
+        parent: this.element.querySelector('front')
+      })
+    }
+    element.create('P', {
+      html: (new Date).getFullYear() + ' &copy; Decko\'cardS',
+      parent: this.copyElt
+    })
     // border
     this.borderElt = element.create('DIV', {
       className: 'border',
       parent: this.element.querySelector('front')
     })
-    this.backElt = element.create('DIV', {
+    this.backElt = this.element.querySelector('back');
+    this.backBorder = element.create('DIV', {
       className: 'border',
       parent: this.element.querySelector('back')
     })
@@ -126,9 +139,9 @@ Card.prototype.render = function() {
   this.element.style.color = this.style.borderColor || '#fff';
   this.borderElt.style.color = this.style.borderColor || '#fff';
   // Back style
-  this.backElt.style.backgroundColor = this.style.backColor || '#fff';
-  this.backElt.style.color = this.style.hatchColor || '#fff';
-  this.backElt.dataset.hatch = this.style.hach
+  this.backBorder.style.backgroundColor = this.style.backColor || '#fff';
+  this.backElt.style.color  = this.backBorder.style.color = this.style.hatchColor || '#fff';
+  this.backBorder.dataset.hatch = this.style.hach
   // Card properties
   this.renderProp(this.properties)
   this.renderProp(this.back)
@@ -233,7 +246,7 @@ Card.prototype.getForm = function(elt) {
 
   const hach = element.create('SELECT', { 
     change: () => {
-      this.backElt.dataset.hatch = this.style.hach = hach.value
+      this.backBorder.dataset.hatch = this.style.hach = hach.value
     },
     parent: liback 
   });
@@ -247,7 +260,7 @@ Card.prototype.getForm = function(elt) {
     value: this.style.backColor || '#ffffff',
     change: (e) => {
       this.style.hatchColor = e.target.value || '#ffffff'
-      this.backElt.style.color = this.style.hatchColor || '#fff';
+      this.backElt.style.color = this.backBorder.style.color = this.style.hatchColor || '#fff';
     },
     parent: liback
   })
@@ -256,7 +269,7 @@ Card.prototype.getForm = function(elt) {
     value: this.style.backColor || '#ffffff',
     change: (e) => {
       this.style.backColor = e.target.value || '#ffffff'
-      this.backElt.style.backgroundColor = this.style.backColor || '#fff';
+      this.backBorder.style.backgroundColor = this.style.backColor || '#fff';
     },
     parent: liback
   })

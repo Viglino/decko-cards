@@ -6,7 +6,7 @@ card[data-template="emoticard"] {
 
   front {
     [data-prop="title"] {
-      bottom: 0;
+      bottom: 1em;
       left: 0;
       width: 100%;
       text-align: center;
@@ -19,11 +19,11 @@ card[data-template="emoticard"] {
     }
     [data-prop="eye"],
     [data-prop="mouth"] {
-      inset: 0;
+      inset: 0 0 12em;
     }
     [data-prop="eye"] img,
     [data-prop="mouth"] img {
-      width: 80%;
+      height: 100%;
     }
   }
 
