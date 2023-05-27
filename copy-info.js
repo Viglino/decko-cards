@@ -1,4 +1,6 @@
-
+/* Create copyright json for svg files in img dir
+ * > node run copy-info.js [dir-name] [copyright_info]
+ */
 //requiring path and fs modules
 const fs = require('fs');
 
@@ -22,7 +24,7 @@ function scanDir(dir, copy) {
     const file = files[f]
     if (file.svg && !file.json) {
       fs.writeFileSync('./assets/img/' + dir + '/' + f + '.json', JSON.stringify({
-        "author": copy || "Viglino",
+        "author": (copy || "Viglino").replace(/_/g, ' '),
         "url": "https://github.com/Viglino/decko-cards",
         "copy": "CC-by-SA"
       }, null, '  '));

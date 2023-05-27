@@ -680,6 +680,272 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "albert-einstein",
+    "file": "albert-einstein.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "albert",
+      "einstein"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "anonymous",
+    "file": "anonymous.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "anonymous"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "british-2",
+    "file": "british-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "british"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "british",
+    "file": "british.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "british"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "clerk",
+    "file": "clerk.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "clerk"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "corto",
+    "file": "corto.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "corto"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "delivery",
+    "file": "delivery.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "delivery"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "dwarf-2",
+    "file": "dwarf-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "dwarf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "dwarf",
+    "file": "dwarf.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "dwarf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "elf-f",
+    "file": "elf-f.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "elf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "elf-m",
+    "file": "elf-m.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "elf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "farmer",
+    "file": "farmer.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "farmer"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "florist-f",
+    "file": "florist-f.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "florist"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "florist-m",
+    "file": "florist-m.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "florist"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "florist",
+    "file": "florist.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "florist"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "gandalf",
+    "file": "gandalf.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "gandalf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "gardener",
+    "file": "gardener.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "gardener"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "grandpa",
+    "file": "grandpa.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "grandpa"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "hacker",
+    "file": "hacker.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "hacker"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "hobbit-2",
+    "file": "hobbit-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "hobbit"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "hobbit",
+    "file": "hobbit.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "hobbit"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "james-bond",
+    "file": "james-bond.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "james",
+      "bond"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "joker-2",
     "file": "joker-2.svg",
     "path": "./img/people/",
@@ -698,6 +964,127 @@ export default [
     "keywords": [
       "people",
       "joker"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "merlin",
+    "file": "merlin.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "merlin"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "nurse-m",
+    "file": "nurse-m.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "nurse"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "nurse",
+    "file": "nurse.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "nurse"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "patrick-ireland",
+    "file": "patrick-ireland.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "patrick",
+      "ireland"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "robot",
+    "file": "robot.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "robot"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "scientist-f-2",
+    "file": "scientist-f-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "scientist"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "scientist-f",
+    "file": "scientist-f.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "scientist"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "scientist",
+    "file": "scientist.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "scientist"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "spy",
+    "file": "spy.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "spy"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "workman",
+    "file": "workman.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "workman"
     ]
   },
   {
