@@ -765,54 +765,6 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
-    "title": "dwarf-2",
-    "file": "dwarf-2.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "dwarf"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "dwarf",
-    "file": "dwarf.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "dwarf"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "elf-f",
-    "file": "elf-f.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "elf"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "elf-m",
-    "file": "elf-m.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "elf"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
     "title": "farmer",
     "file": "farmer.svg",
     "path": "./img/people/",
@@ -861,18 +813,6 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
-    "title": "gandalf",
-    "file": "gandalf.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "gandalf"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
     "title": "gardener",
     "file": "gardener.svg",
     "path": "./img/people/",
@@ -903,30 +843,6 @@ export default [
     "keywords": [
       "people",
       "hacker"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "hobbit-2",
-    "file": "hobbit-2.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "hobbit"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "hobbit",
-    "file": "hobbit.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "hobbit"
     ]
   },
   {
@@ -1025,6 +941,90 @@ export default [
     "keywords": [
       "people",
       "robot"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sa-dwarf-2",
+    "file": "sa-dwarf-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "dwarf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sa-dwarf",
+    "file": "sa-dwarf.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "dwarf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sa-elf-f",
+    "file": "sa-elf-f.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "elf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sa-elf-m",
+    "file": "sa-elf-m.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "elf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sa-gandalf",
+    "file": "sa-gandalf.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "gandalf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sa-hobbit-2",
+    "file": "sa-hobbit-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "hobbit"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sa-hobbit",
+    "file": "sa-hobbit.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "hobbit"
     ]
   },
   {
