@@ -177,7 +177,8 @@ Card.prototype.renderProp = function(properties) {
         img.src = (prop.value !== undefined ? prop.value : prop.default || '')
         break;
       }
-      case 'lineh': {
+      case 'lineh':
+      case 'block': {
         break;
       }
       default: {
@@ -194,6 +195,7 @@ Card.prototype.renderProp = function(properties) {
           }
           case 'img_top':
           case 'img_left':
+          case 'img_height':
           case 'img_width': {
             elt.querySelector('img').style[s.replace('img_','')] = prop.style[s] + '%';
             break;
@@ -403,12 +405,13 @@ Card.prototype.getFromProperties = function(properties, elt) {
           }
           case 'img_top':
           case 'img_left':
+          case 'img_height':
           case 'img_width': {
             element.create('INPUT', {
               type: 'range',
               className: 'size',
-              min: /width/.test(s) ? 20 : -200,
-              max: /width/.test(s) ? 200 : 300,
+              min: /width|height/.test(s) ? 20 : -200,
+              max: /width|height/.test(s) ? 200 : 300,
               value: prop.style[s],
               on: {
                 input: (e) => {

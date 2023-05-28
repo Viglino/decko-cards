@@ -1,0 +1,56 @@
+card[data-template="peuxpas"] {
+  [data-prop="background"] {
+    background-color: currentColor;
+    width: 60em;
+    height: 60em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  };
+  [data-prop="background"] > * {
+    position: absolute;
+  }
+
+  [data-prop="peuxpas"] {
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-family: Amarante;
+    font-size: 7em;
+    bottom: calc(50% + 2em);
+    left: 0;
+    transform: scaleY(1.5);
+    font-weight: bold;
+  }
+  .info {
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    overflow: visible;
+  }
+  [data-prop="jai"] {
+    display: inline-block;
+    font-family: Amarante;
+    transform: scaleY(2);
+    padding: 1em 1em 0 0;
+    color: #fff;
+  }
+  [data-prop="info"] {
+    font-size: 2.2em;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Bangers, cursive;
+    margin-top: -.1em;
+  }
+  [data-prop="back"],
+  [data-prop="accessory"],
+  [data-prop="img"] {
+    top: calc(50% - 2em);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 35em;
+    width: 40em;
+  }
+}

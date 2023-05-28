@@ -4,6 +4,193 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "chemist-flask-",
+    "file": "chemist-flask-.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "chemist",
+      "flask"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "chemist-flask",
+    "file": "chemist-flask.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "chemist",
+      "flask"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "chemist-tube",
+    "file": "chemist-tube.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "chemist",
+      "tube"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "compass",
+    "file": "compass.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "compass"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "computer",
+    "file": "computer.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "computer"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "database",
+    "file": "database.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "database"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "developper-computer",
+    "file": "developper-computer.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "developper",
+      "computer"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "globe",
+    "file": "globe.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "globe"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "hacker-computer",
+    "file": "hacker-computer.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "hacker",
+      "computer"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "map-world",
+    "file": "map-world.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "map",
+      "world"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "pills",
+    "file": "pills.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "pills"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "ranges",
+    "file": "ranges.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "ranges"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sandglass",
+    "file": "sandglass.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "sandglass"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "slide",
+    "file": "slide.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "slide"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "vegetal-tube",
+    "file": "vegetal-tube.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "vegetal",
+      "tube"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "alien",
     "file": "alien.svg",
     "path": "./img/emoticard/eye/",
