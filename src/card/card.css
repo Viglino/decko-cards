@@ -30,6 +30,10 @@ card[data-format="square"] {
   width: 96em;
   height: 96em;
 }
+card[data-format="smallsq"] {
+  width: 49em;
+  height: 49em;
+}
 
 card p  {
   font-size: 5em;

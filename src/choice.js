@@ -23,7 +23,7 @@ Object.keys(templates).forEach(k => {
     deck.addCard();
   })
 });
-const info = element.create('DIV', { className: 'info', parent: content })
+const info = element.create('DIV', { className: 'dialogInfo', parent: content })
 const file = element.create('DIV', {
   className: 'file',
   parent: content

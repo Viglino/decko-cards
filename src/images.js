@@ -4,6 +4,55 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "atom",
+    "file": "atom.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "atom"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "bensen-burner",
+    "file": "bensen-burner.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "bensen",
+      "burner"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "calculator",
+    "file": "calculator.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "calculator"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "cartoviz",
+    "file": "cartoviz.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "cartoviz"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "chemist-flask-",
     "file": "chemist-flask-.svg",
     "path": "./img/accessories/",
@@ -79,6 +128,18 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "dataviz",
+    "file": "dataviz.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "dataviz"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "developper-computer",
     "file": "developper-computer.svg",
     "path": "./img/accessories/",
@@ -86,6 +147,183 @@ export default [
       "accessories",
       "developper",
       "computer"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "dice",
+    "file": "dice.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "dice"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "dices",
+    "file": "dices.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "dices"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "dna",
+    "file": "dna.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "dna"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "earth-africa",
+    "file": "earth-africa.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "earth",
+      "africa"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "earth-america",
+    "file": "earth-america.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "earth",
+      "america"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "earth-asia",
+    "file": "earth-asia.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "earth",
+      "asia"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "earth-north",
+    "file": "earth-north.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "earth",
+      "north"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "earth",
+    "file": "earth.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "earth"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "fatasy-axe",
+    "file": "fatasy-axe.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "fatasy",
+      "axe"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "fatasy-hammer",
+    "file": "fatasy-hammer.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "fatasy",
+      "hammer"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "fatasy-map",
+    "file": "fatasy-map.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "fatasy",
+      "map"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "flower-pot",
+    "file": "flower-pot.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "flower",
+      "pot"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "garden-fork",
+    "file": "garden-fork.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "garden",
+      "fork"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "gear",
+    "file": "gear.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "gear"
     ]
   },
   {
@@ -130,12 +368,36 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "molecule",
+    "file": "molecule.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "molecule"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "pills",
     "file": "pills.svg",
     "path": "./img/accessories/",
     "keywords": [
       "accessories",
       "pills"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "plant",
+    "file": "plant.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "plant"
     ]
   },
   {
@@ -172,6 +434,43 @@ export default [
     "keywords": [
       "accessories",
       "slide"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "spade",
+    "file": "spade.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "spade"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "thermometer",
+    "file": "thermometer.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "thermometer"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "treasure-map",
+    "file": "treasure-map.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "treasure",
+      "map"
     ]
   },
   {
@@ -867,6 +1166,45 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "afro-boy",
+    "file": "afro-boy.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "afro",
+      "boy"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "afro-girl",
+    "file": "afro-girl.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "afro",
+      "girl"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "afro-woman",
+    "file": "afro-woman.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "afro",
+      "woman"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "albert-einstein",
     "file": "albert-einstein.svg",
     "path": "./img/people/",
@@ -886,6 +1224,57 @@ export default [
     "keywords": [
       "people",
       "anonymous"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "aunt",
+    "file": "aunt.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "aunt"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "bald-beard",
+    "file": "bald-beard.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "bald",
+      "beard"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "boy-glasses-2",
+    "file": "boy-glasses-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "boy",
+      "glasses"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "boy-glasses",
+    "file": "boy-glasses.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "boy",
+      "glasses"
     ]
   },
   {
@@ -916,6 +1305,18 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "brother",
+    "file": "brother.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "brother"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "clerk",
     "file": "clerk.svg",
     "path": "./img/people/",
@@ -940,6 +1341,32 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "curly-boy",
+    "file": "curly-boy.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "curly",
+      "boy"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "curly-girl",
+    "file": "curly-girl.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "curly",
+      "girl"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "delivery",
     "file": "delivery.svg",
     "path": "./img/people/",
@@ -952,12 +1379,115 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "fantasy-lr-dwarf-2",
+    "file": "fantasy-lr-dwarf-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "fantasy",
+      "dwarf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "fantasy-lr-dwarf",
+    "file": "fantasy-lr-dwarf.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "fantasy",
+      "dwarf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "fantasy-lr-elf-f",
+    "file": "fantasy-lr-elf-f.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "fantasy",
+      "elf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "fantasy-lr-elf-m",
+    "file": "fantasy-lr-elf-m.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "fantasy",
+      "elf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "fantasy-lr-gandalf",
+    "file": "fantasy-lr-gandalf.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "fantasy",
+      "gandalf"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "fantasy-lr-hobbit-2",
+    "file": "fantasy-lr-hobbit-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "fantasy",
+      "hobbit"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "fantasy-lr-hobbit",
+    "file": "fantasy-lr-hobbit.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "fantasy",
+      "hobbit"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "farmer",
     "file": "farmer.svg",
     "path": "./img/people/",
     "keywords": [
       "people",
       "farmer"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "fireman",
+    "file": "fireman.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "fireman"
     ]
   },
   {
@@ -1012,6 +1542,91 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "girl-2",
+    "file": "girl-2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "girl"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "girl-3",
+    "file": "girl-3.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "girl"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "girl-4",
+    "file": "girl-4.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "girl"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "girl-5",
+    "file": "girl-5.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "girl"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "girl-6",
+    "file": "girl-6.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "girl"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "girl-glasses",
+    "file": "girl-glasses.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "girl",
+      "glasses"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "girl",
+    "file": "girl.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "girl"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "grandpa",
     "file": "grandpa.svg",
     "path": "./img/people/",
@@ -1030,6 +1645,18 @@ export default [
     "keywords": [
       "people",
       "hacker"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "hipster",
+    "file": "hipster.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "hipster"
     ]
   },
   {
@@ -1085,6 +1712,18 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "niece",
+    "file": "niece.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "niece"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "nurse-m",
     "file": "nurse-m.svg",
     "path": "./img/people/",
@@ -1122,96 +1761,60 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "pirate",
+    "file": "pirate.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "pirate"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "pirate2",
+    "file": "pirate2.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "pirate2"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "pirate3",
+    "file": "pirate3.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "pirate3"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "piratef",
+    "file": "piratef.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "piratef"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "robot",
     "file": "robot.svg",
     "path": "./img/people/",
     "keywords": [
       "people",
       "robot"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "sa-dwarf-2",
-    "file": "sa-dwarf-2.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "dwarf"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "sa-dwarf",
-    "file": "sa-dwarf.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "dwarf"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "sa-elf-f",
-    "file": "sa-elf-f.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "elf"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "sa-elf-m",
-    "file": "sa-elf-m.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "elf"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "sa-gandalf",
-    "file": "sa-gandalf.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "gandalf"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "sa-hobbit-2",
-    "file": "sa-hobbit-2.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "hobbit"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "sa-hobbit",
-    "file": "sa-hobbit.svg",
-    "path": "./img/people/",
-    "keywords": [
-      "people",
-      "hobbit"
     ]
   },
   {
@@ -1260,6 +1863,18 @@ export default [
     "keywords": [
       "people",
       "spy"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "stepmother",
+    "file": "stepmother.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "stepmother"
     ]
   },
   {

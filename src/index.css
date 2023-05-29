@@ -211,7 +211,7 @@ footer {
   padding: 1em;
   margin: -1em;
 }
-[data-role="dialog"].choice .info {
+[data-role="dialog"].choice .dialogInfo {
   height: 2em;
   line-height: 2em;
   background-color: #eee;

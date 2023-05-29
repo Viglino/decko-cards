@@ -1,8 +1,8 @@
-card[data-template="peuxpas"] {
+card[data-template="badge"] {
   [data-prop="background"] {
     background-color: currentColor;
-    width: 60em;
-    height: 60em;
+    width: 85%;
+    height: 85%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -11,34 +11,47 @@ card[data-template="peuxpas"] {
   [data-prop="background"] > * {
     position: absolute;
   }
+  [data-prop="background"]:before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    inset: 0;
+    z-index: 1;
+    border-radius: 50%;
+    opacity: .5;
+    box-shadow: 
+      inset 2px 3px 5px 4px #fff,
+      inset -2px -3px 5px 2px #000;
+  }
 
-  [data-prop="peuxpas"] {
+  [data-prop="badge"] {
     width: 100%;
     text-align: center;
     color: #000;
     font-family: Amarante;
-    font-size: 7em;
-    bottom: calc(50% + 2em);
-    left: 0;
-    transform: scaleY(1.5);
+    font-size: 1em;
     font-weight: bold;
+    bottom: calc(50% + 10em);
+    left: 0;
+    transform: scaleY(2.2);
   }
   .info {
-    bottom: 50%;
+    bottom: calc(50% - 2em);
     left: 0;
     width: 100%;
     text-align: center;
     overflow: visible;
   }
   [data-prop="jai"] {
+    font-size: .8em;
     display: inline-block;
     font-family: Amarante;
-    transform: scaleY(2);
-    padding: 1em 1em 0 0;
+    transform: scaleY(2.2);
+    padding: .8em 1.5em 0 0;
     color: #fff;
   }
   [data-prop="info"] {
-    font-size: 2.2em;
+    font-size: 1.8em;
     display: inline-block;
     vertical-align: middle;
     font-family: Bangers, cursive;
@@ -47,10 +60,13 @@ card[data-template="peuxpas"] {
   [data-prop="back"],
   [data-prop="accessory"],
   [data-prop="img"] {
-    top: calc(50% - 2em);
+    top: calc(50% - 1em);
     left: 50%;
     transform: translateX(-50%);
-    height: 35em;
-    width: 40em;
+    height: 60%;
+    width: 100%;
+  }
+  .copyright {
+    background-color: transparent;
   }
 }

@@ -6,10 +6,10 @@ import roleProp from './role.js'
 import '../template/emoticard.scss'
 import emoticardHTML from 'bundle-text:./emoticard.html'
 import emoticardProp from './emoticard.js'
-// Peuxpas
-import '../template/peuxpas.scss'
-import peuxpasHTML from 'bundle-text:./peuxpas.html'
-import peuxpasProp from './peuxpas.js'
+// Badge
+import '../template/badge.scss'
+import badgeHTML from 'bundle-text:./badge.html'
+import badgeProp from './badge.js'
 
 const templates = {
   role: {
@@ -20,9 +20,9 @@ const templates = {
     html: emoticardHTML,
     properties: emoticardProp
   },
-  peuxpas: {
-    html: peuxpasHTML,
-    properties: peuxpasProp
+  badge: {
+    html: badgeHTML,
+    properties: badgeProp
   }
 };
 for (let i in templates) {

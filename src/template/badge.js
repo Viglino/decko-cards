@@ -1,18 +1,24 @@
 export default {
-  name: 'peuxpasTemplate',
-  description: 'peuxpasDesc',
+  name: 'badgeTemplate',
+  description: 'badgeDesc',
   className: 'noBorder',
-  format: 'small',
+  format: 'smallsq',
+  style: {
+    borderColor: '#67a1b7'
+  },
   properties: {
-    background: {
-      type: 'block',
+    peuxpas: {
+      type: 'text',
+      default: 'J\'peux pas',
+      collapse: true,
       style: {
-        color: '#67a1b7'
+        color: '#000000',
       }
     },
     jai: {
       type: 'text',
       default: 'j\'ai',
+      collapse: true,
       style: {
         color: '#ffffff',
       }
