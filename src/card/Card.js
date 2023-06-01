@@ -84,7 +84,14 @@ class Card {
       parent: this.element.querySelector('back')
     })
     // Properties
-    this.format = template.format || 'small';
+    this.format = JSON.parse(JSON.stringify(options.format || null))
+    if (!this.format || !this.format.template) {
+      this.format = {
+        template: template.format || 'small',
+        alt: template.alt,
+        altVal: template.altVal
+      }
+    }
     this.properties = JSON.parse(JSON.stringify(options.properties || template.properties))
     this.back = JSON.parse(JSON.stringify(options.back || template.back))
     this.style = JSON.parse(JSON.stringify(options.style || template.style || {}));
@@ -111,6 +118,7 @@ Card.prototype.clone = function() {
   const c = new Card({
     template: this.getTemplate(),
     properties: this.properties,
+    format: this.format,
     back: this.back,
     style: this.style
   });
@@ -133,8 +141,9 @@ Card.prototype.copy = function() {
 
 /** Render the card */
 Card.prototype.render = function() {
-  document.body.dataset.format = this.format || 'small'
-  this.element.dataset.format = this.format || 'small'
+  document.body.dataset.format = this.format.template || 'small'
+  this.element.dataset.format = this.format.template || 'small'
+  this.element.dataset.alt = this.format.altVal || ''
   // Card style
   this.element.style.color = this.style.borderColor || '#fff';
   this.borderElt.style.color = this.style.borderColor || '#fff';
@@ -216,9 +225,29 @@ Card.prototype.getForm = function(elt) {
   const front = element.create('FRONT', { parent: elt })
 
   const li = element.create('FIELDSET', {
+    className: 'head',
     html: '<legend>Style</legend>',
     parent: front
   })
+
+  // ClassName
+  if (this.format.alt) {
+    const alt = element.create('SELECT', {
+      className: 'alt',
+      change: () => {
+        this.format.altVal = this.element.dataset.alt = alt.value
+      },
+      parent: li
+    })
+    this.format.alt.forEach(c => {
+      const opt = element.create('OPTION', { 
+        value: c, 
+        html: c, 
+        parent: alt
+      });
+      if (this.format.altVal === c) opt.selected = true
+    })
+  }
 
   // Global properties
   element.create('LABEL', {

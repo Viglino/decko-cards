@@ -2,8 +2,8 @@ export default {
   name: 'badgeTemplate',
   description: 'badgeDesc',
   className: 'noBorder',
-  format: 'smallsq',
-  alt: [ 'square', 'round', 'badge'],
+  format: 'visit',
+  alt: [ 'sticker', 'badge'],
   style: {
     borderColor: '#67a1b7'
   },

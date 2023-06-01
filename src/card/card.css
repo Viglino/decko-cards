@@ -34,6 +34,10 @@ card[data-format="smallsq"] {
   width: 49em;
   height: 49em;
 }
+card[data-format="visit"] {
+  width: 70em;
+  height: 49em;
+}
 
 card p  {
   font-size: 5em;

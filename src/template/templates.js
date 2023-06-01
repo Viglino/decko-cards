@@ -10,6 +10,10 @@ import emoticardProp from './emoticard.js'
 import '../template/badge.scss'
 import badgeHTML from 'bundle-text:./badge.html'
 import badgeProp from './badge.js'
+// Stickers
+import '../template/sticker.scss'
+import stickerHTML from 'bundle-text:./sticker.html'
+import stickerProp from './sticker.js'
 
 const templates = {
   role: {
@@ -23,6 +27,10 @@ const templates = {
   badge: {
     html: badgeHTML,
     properties: badgeProp
+  },
+  sticker: {
+    html: stickerHTML,
+    properties: stickerProp
   }
 };
 for (let i in templates) {

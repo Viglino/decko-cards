@@ -236,6 +236,15 @@
     padding: 0 0 0 .5em;
     border-radius: 1em;
   }
+  .head select.alt {
+    left: 8em;
+    right: auto;
+    transform: translateX(-50%);
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: .1em .5em;
+  }
+
 }
 
 [data-format="medium"] {
@@ -251,5 +260,10 @@
 [data-format="square"] {
   #form {
     width: calc(100% - 98mm);
+  }
+}
+[data-format="smallsq"] {
+  #form {
+    width: calc(100% - 51mm);
   }
 }
