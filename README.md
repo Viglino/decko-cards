@@ -13,4 +13,5 @@
 - https://momes.parents.fr/bricolages-diy/bricolages-a-imprimer/posters-a-imprimer/affiche-sur-les-emotions-comment-je-me-sens-832296
 
 
-? https://github.com/Simonwep/pickr 
+use a color picker ? https://github.com/Simonwep/pickr    
+use circle type ? https://github.com/peterhry/circletype
