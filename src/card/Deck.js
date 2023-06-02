@@ -2,6 +2,8 @@ import { saveAs } from 'file-saver';
 import element from "../utils/element";
 import _T from '../i18n/i18n'
 import Card from "./Card";
+import 'iconicss/icss.css'
+import 'iconicss/css/search.css'
 
 const cardElt = document.getElementById('card');
 const formElt = document.getElementById('form');
@@ -15,6 +17,10 @@ class Deck {
     this.current = undefined;
     this.template = template
 
+    const tmp = Card.getTemplate(template)
+    document.body.dataset.format = tmp.format || 'small'
+    document.body.dataset.back = tmp.noBack ? 0 : 1
+
     /* Card list */
     menu.innerHTML = '';
     element.create('BUTTON', { 
@@ -24,9 +30,43 @@ class Deck {
       },
       parent: menu 
     })
+    element.create('I', { 
+      className: 'icss icss-search',
+      parent: menu
+    })
+    element.create('INPUT', { 
+      type: 'range',
+      min: 0, max: 5, value: 0,
+      change: (e) => {
+        menu.dataset.size = e.target.value
+      },
+      parent: menu 
+    })
     this.cardList = element.create('UL', { parent: menu })
     if (cards) cards.forEach(c => this.addCard(new Card(c)))
+
+    // Print
+    document.addEventListener('keydown', e => {
+      if (e.ctrlKey || e.metaKey) {
+        switch (e.key) {
+          case 'p':
+          case 's': {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            if (e.key === 'p') this.print();
+            else this.save()
+            break;
+          }
+        }
+      }
+    });
   }
+}
+
+/** Print the deck */
+Deck.prototype.print = function() {
+  console.log('print')
+  window.print()
 }
 
 /** Remove a card from deck */

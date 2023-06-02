@@ -36,6 +36,7 @@ const templates = {
 for (let i in templates) {
   templates[i].properties.html = templates[i].html;
   templates[i] = templates[i].properties;
+  templates[i].id = i
 }
 
 export default templates

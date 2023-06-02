@@ -53,14 +53,13 @@ function calcTranform(elt, transform) {
 class Card {
   constructor(options) {
     options = options || {};
-    const tmp = templates[options.template] ? options.template : 'role';
-    const template = templates[tmp];
+    const template = Card.getTemplate(options.template);
     this.element = element.create('CARD', {
       html: template.html,
       className: template.className || '',
       parent: options.parent
     })
-    this.element.dataset.template = tmp;
+    this.element.dataset.template = template.id;
     // Copyright
     this.copyElt = this.element.querySelector('.copyright')
     if (!this.copyElt) {
@@ -97,6 +96,11 @@ class Card {
     this.style = JSON.parse(JSON.stringify(options.style || template.style || {}));
     // Set parameters
     this.render()
+  }
+
+  static getTemplate(template) {
+    const tmp = templates[template] ? template : 'role';
+    return templates[tmp];
   }
 }
 
@@ -141,7 +145,6 @@ Card.prototype.copy = function() {
 
 /** Render the card */
 Card.prototype.render = function() {
-  document.body.dataset.format = this.format.template || 'small'
   this.element.dataset.format = this.format.template || 'small'
   this.element.dataset.alt = this.format.altVal || ''
   // Card style

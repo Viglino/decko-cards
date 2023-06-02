@@ -2,6 +2,7 @@ body {
   font-family: verdana, sans-serif;
   padding: 0;
   margin: 0;
+  user-select: none;
 }
 
 header {
@@ -59,6 +60,19 @@ main {
   border-radius: 50%;
   margin: .5em .2em;
 }
+#cards i.icss {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  margin: .6em .2em;
+}
+#cards input[type="range"] {
+  position: absolute;
+  top: .5em;
+  left: 1.5em;
+  width: 4.5em;
+}
+
 #cards ul {
   position: absolute;
   inset: 0;
@@ -115,6 +129,21 @@ main {
 #cards card {
   font-size: 1px;
   touch-action: none;
+}
+#cards[data-size="1"] card {
+  font-size: 1.1px;
+}
+#cards[data-size="2"] card {
+  font-size: 1.2px;
+}
+#cards[data-size="3"] card {
+  font-size: 1.3px;
+}
+#cards[data-size="4"] card {
+  font-size: 1.4px;
+}
+#cards[data-size="5"] card {
+  font-size: 1.5px;
 }
 
 #card {

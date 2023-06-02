@@ -128,3 +128,7 @@ back,
 [data-face="back"] back {
   display: block;
 }
+
+[data-back="0"] #card button.fback {
+  display: none;
+}

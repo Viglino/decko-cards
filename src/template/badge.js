@@ -3,6 +3,7 @@ export default {
   description: 'badgeDesc',
   className: 'noBorder',
   format: 'smallsq',
+  noBack: true,
   alt: [ 'square', 'round', 'badge'],
   style: {
     borderColor: '#67a1b7'
