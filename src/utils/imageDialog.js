@@ -55,8 +55,7 @@ function imageDialog(current, fn) {
       parent: dir
     })
   })
-  console.l
-  const d = current.replace('./img/', '').replace(/\/$/, '')
+  const d = current.replace('./img/', '') // .replace(/\/$/, '')
   showPath(d)
   dialog.show({
     title: _T('images'),

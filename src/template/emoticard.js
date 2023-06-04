@@ -9,10 +9,12 @@ export default {
   properties: {
     eye: {
       type: 'image',
+      path: './img/emoticard/eye/',
       default: './img/emoticard/eye/eye.svg',
     },
     mouth: {
       type: 'image',
+      path: './img/emoticard/mouth/',
       default: './img/emoticard/mouth/smile.svg',
     },
     title: {

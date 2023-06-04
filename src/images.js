@@ -659,6 +659,76 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "monster-eye-1",
+    "file": "monster-eye-1.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye",
+      "monster",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-eye-2",
+    "file": "monster-eye-2.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye",
+      "monster",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-eye-2b",
+    "file": "monster-eye-2b.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye",
+      "monster",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-eye-3",
+    "file": "monster-eye-3.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye",
+      "monster",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-eye-n",
+    "file": "monster-eye-n.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye",
+      "monster",
+      "eye"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "pale",
     "file": "pale.svg",
     "path": "./img/emoticard/eye/",
@@ -971,6 +1041,115 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "monster-2",
+    "file": "monster-2.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "monster"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-3",
+    "file": "monster-3.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "monster"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-snag-1",
+    "file": "monster-snag-1.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "monster",
+      "snag"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-snag-2",
+    "file": "monster-snag-2.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "monster",
+      "snag"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-snag-3",
+    "file": "monster-snag-3.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "monster",
+      "snag"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-teeth-2",
+    "file": "monster-teeth-2.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "monster",
+      "teeth"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-teeth",
+    "file": "monster-teeth.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "monster",
+      "teeth"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster",
+    "file": "monster.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "monster"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "mustache",
     "file": "mustache.svg",
     "path": "./img/emoticard/mouth/",
@@ -1114,6 +1293,20 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "vampire-sad",
+    "file": "vampire-sad.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "vampire",
+      "sad"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "vampire",
     "file": "vampire.svg",
     "path": "./img/emoticard/mouth/",
@@ -1160,6 +1353,66 @@ export default [
       "emoticard",
       "mouth",
       "yum"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster-2",
+    "file": "monster-2.svg",
+    "path": "./img/monster/",
+    "keywords": [
+      "monster",
+      "monster"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "monster",
+    "file": "monster.svg",
+    "path": "./img/monster/",
+    "keywords": [
+      "monster",
+      "monster"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "slug",
+    "file": "slug.svg",
+    "path": "./img/monster/",
+    "keywords": [
+      "monster",
+      "slug"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "spider",
+    "file": "spider.svg",
+    "path": "./img/monster/",
+    "keywords": [
+      "monster",
+      "spider"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "splash",
+    "file": "splash.svg",
+    "path": "./img/monster/",
+    "keywords": [
+      "monster",
+      "splash"
     ]
   },
   {

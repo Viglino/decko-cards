@@ -354,7 +354,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
         element.create('BUTTON', {
           className: 'image',
           click: () => {
-            imageDialog(img.value, url => {
+            imageDialog(img.value || prop.path || '', url => {
               img.value = url
               img.dispatchEvent(new Event('change'))
             })
