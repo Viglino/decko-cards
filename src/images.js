@@ -620,6 +620,58 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "halloween-1",
+    "file": "halloween-1.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye",
+      "halloween"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "halloween-2",
+    "file": "halloween-2.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye",
+      "halloween"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "halloween-3",
+    "file": "halloween-3.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye",
+      "halloween"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "halloween-4",
+    "file": "halloween-4.svg",
+    "path": "./img/emoticard/eye/",
+    "keywords": [
+      "emoticard",
+      "eye",
+      "halloween"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "joy",
     "file": "joy.svg",
     "path": "./img/emoticard/eye/",
@@ -1015,6 +1067,45 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "halloween-1",
+    "file": "halloween-1.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "halloween"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "halloween-2",
+    "file": "halloween-2.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "halloween"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "halloween-3",
+    "file": "halloween-3.svg",
+    "path": "./img/emoticard/mouth/",
+    "keywords": [
+      "emoticard",
+      "mouth",
+      "halloween"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "kiss",
     "file": "kiss.svg",
     "path": "./img/emoticard/mouth/",
@@ -1371,18 +1462,6 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
-    "title": "monster",
-    "file": "monster.svg",
-    "path": "./img/monster/",
-    "keywords": [
-      "monster",
-      "monster"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
     "title": "slug",
     "file": "slug.svg",
     "path": "./img/monster/",
@@ -1413,6 +1492,18 @@ export default [
     "keywords": [
       "monster",
       "splash"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sponge",
+    "file": "sponge.svg",
+    "path": "./img/monster/",
+    "keywords": [
+      "monster",
+      "sponge"
     ]
   },
   {
