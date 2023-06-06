@@ -1574,6 +1574,71 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "army-lieutenant",
+    "file": "army-lieutenant.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "army",
+      "lieutenant"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "ateam-baracus",
+    "file": "ateam-baracus.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "ateam",
+      "baracus"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "ateam-hannibal",
+    "file": "ateam-hannibal.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "ateam",
+      "hannibal"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "ateam-murdock",
+    "file": "ateam-murdock.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "ateam",
+      "murdock"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "ateam-peck",
+    "file": "ateam-peck.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "ateam",
+      "peck"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "aunt",
     "file": "aunt.svg",
     "path": "./img/people/",
@@ -2092,6 +2157,32 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "officer-man",
+    "file": "officer-man.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "officer",
+      "man"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "officer-woman",
+    "file": "officer-woman.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "officer",
+      "woman"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "patrick-ireland",
     "file": "patrick-ireland.svg",
     "path": "./img/people/",
@@ -2153,12 +2244,76 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "police-man",
+    "file": "police-man.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "police",
+      "man"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "police-woman",
+    "file": "police-woman.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "police",
+      "woman"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "prisoner",
+    "file": "prisoner.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "prisoner"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "robot",
     "file": "robot.svg",
     "path": "./img/people/",
     "keywords": [
       "people",
       "robot"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sailor-man",
+    "file": "sailor-man.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "sailor",
+      "man"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "sailor-woman",
+    "file": "sailor-woman.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "sailor",
+      "woman"
     ]
   },
   {
@@ -2195,6 +2350,18 @@ export default [
     "keywords": [
       "people",
       "scientist"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "ship captain",
+    "file": "ship captain.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "ship captain"
     ]
   },
   {
