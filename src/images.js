@@ -4,6 +4,32 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "arrow-bow",
+    "file": "arrow-bow.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "arrow",
+      "bow"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "arrow-quiver",
+    "file": "arrow-quiver.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "arrow",
+      "quiver"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "atom",
     "file": "atom.svg",
     "path": "./img/accessories/",
