@@ -37,6 +37,7 @@ export default {
         img_height: 80,
         img_left: 50,
         img_top: 50,
+        img_rotate: 0
       }
     },
     img: {

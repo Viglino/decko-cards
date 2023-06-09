@@ -72,6 +72,14 @@
   &.img {
     text-align: center;
 
+    .icons {
+      position: sticky;
+      top: -1em;
+      background-color: #fff;
+      margin: -1em -1em 1em;
+      padding: 1em;
+      box-shadow: 0 0 5px rgba(0,0,0,.5);
+    }
     select {
       margin: auto;
       display: block;
@@ -79,7 +87,14 @@
       padding: .5em 1em;
       width: 50%;
       max-width: 100%;
-      margin-bottom: .5em;
+    }
+
+    .content {
+      overflow-y: scroll;
+    }
+    .content > div {
+      margin: 0 -1em;
+      padding: 0 1em 1em;
     }
 
     img {
@@ -95,6 +110,7 @@
     }
     img:hover {
       border-color: #f00;
+      transform: scale(1.5);
     }
 
   }

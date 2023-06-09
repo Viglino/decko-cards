@@ -26,7 +26,7 @@ function imageDialog(current, fn) {
   }
   const dir = element.create('SELECT', { 
     change: () => showPath(),
-    parent: content
+    parent: element.create('DIV', { className: 'icons', parent: content })
   })
   const path = {};
   images.forEach(img => {
