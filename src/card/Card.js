@@ -173,54 +173,70 @@ Card.prototype.renderProp = function(properties) {
     }
     elt.dataset.type = prop.type;
     elt.dataset.alt = prop.altVal;
-    // 
-    switch (prop.type) {
-      case 'text': 
-      case 'textarea': {
-        const content = prop.value !== undefined ? prop.value : _T(prop.default) || ''
-        elt.innerHTML = '';
-        const txt = element.create('P', { style: { fontSize: prop.fontSize + 'em' }, parent: elt })
-        txt.innerHTML = getHTML(content);
-        break;
-      }
-      case 'image': {
-        elt.innerHTML = '';
-        const img = element.create('IMG', { parent: elt })
-        img.src = (prop.value !== undefined ? prop.value : prop.default || '')
-        break;
-      }
-      case 'lineh':
-      case 'block': {
-        break;
-      }
-      default: {
-        console.warn('[BADTYPE] ', prop.type)
-        break;
-      }
-    }
-    if (prop.style) {
-      Object.keys(prop.style).forEach(s => {
-        switch(s) {
-          case 'transform': {
-            calcTranform(elt, prop.style[s])
-            break;
-          }
-          case 'img_top':
-          case 'img_left':
-          case 'img_height':
-          case 'img_width': {
-            elt.querySelector('img').style[s.replace('img_','')] = prop.style[s] + '%';
-            break;
-          }
-          default: {
-            elt.style[s] = prop.style[s];
-            break;
-          }
-        }
-      })
-    }
+
+    this._renderProp(elt, prop, true)
   })
 }
+
+Card.prototype._renderProp = function(elt, prop, related) {
+  // 
+  switch (prop.type) {
+    case 'text': 
+    case 'textarea': {
+      const content = prop.value !== undefined ? prop.value : _T(prop.default) || ''
+      elt.innerHTML = '';
+      const txt = element.create('P', { style: { fontSize: prop.fontSize + 'em' }, parent: elt })
+      txt.innerHTML = getHTML(content);
+      break;
+    }
+    case 'image': {
+      elt.innerHTML = '';
+      const img = element.create('IMG', { parent: elt })
+      img.src = (prop.value !== undefined ? prop.value : prop.default || '')
+      break;
+    }
+    case 'lineh':
+    case 'block': {
+      break;
+    }
+    default: {
+      console.warn('[BADTYPE] ', prop.type)
+      break;
+    }
+  }
+  if (prop.style) {
+    Object.keys(prop.style).forEach(s => {
+      switch(s) {
+        case 'transform': {
+          calcTranform(elt, prop.style[s])
+          break;
+        }
+        case 'img_rotate': {
+          elt.querySelector('img').style.transform = 'translate(-50%, -50%) rotate('+prop.style[s]+'deg)'
+        }
+        case 'img_top':
+        case 'img_left':
+        case 'img_height':
+        case 'img_width': {
+          elt.querySelector('img').style[s.replace('img_','')] = prop.style[s] + '%';
+          break;
+        }
+        default: {
+          elt.style[s] = prop.style[s];
+          break;
+        }
+      }
+    })
+  }
+
+  // Render related
+  if (related && prop.related) {
+    prop.related.forEach(r => {
+      this._renderProp(this.element.querySelector('[data-prop="'+r+'"]'), prop, false)
+    })
+  }
+}
+
 
 /* Get card form */
 Card.prototype.getForm = function(elt) {
@@ -341,9 +357,8 @@ Card.prototype.getFromProperties = function(properties, elt) {
           type: 'text',
           on: {
             keyup: (e) => {
-              prop.value = e.target.value
-              const content = getHTML(e.target.value);
-              target.querySelector('p').innerHTML = content
+              prop.value = e.target.value;
+              this._renderProp(target, prop, true);
             }
           },
           parent: li
@@ -368,7 +383,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
           value: prop.value || '',
           change: (e) => {
             prop.value = e.target.value
-            target.querySelector('IMG').src = prop.value
+            this._renderProp(target, prop, true);
           },
           parent: li
         })
@@ -410,7 +425,8 @@ Card.prototype.getFromProperties = function(properties, elt) {
               type: 'color',
               value: prop.style[s],
               change: (e) => {
-                target.style[s] = prop.style[s] = e.target.value
+                prop.style[s] = e.target.value
+                this._renderProp(target, prop, true);
               },
               parent: label
             })
@@ -427,7 +443,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
               on: {
                 input: (e) => {
                   prop.style[s] = e.target.value
-                  target.querySelector('img').style.transform = 'translate(-50%, -50%) rotate('+prop.style[s]+'deg)'
+                  this._renderProp(target, prop, true);
                 }
               },
               parent: label
@@ -448,7 +464,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
               on: {
                 input: (e) => {
                   prop.style[s] = e.target.value
-                  target.querySelector('img').style[s.replace('img_','')] = prop.style[s] + '%'
+                  this._renderProp(target, prop, true);
                 }
               },
               parent: label
@@ -469,7 +485,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
                     on: {
                       input: (e) => {
                         prop.style.transform[t] = e.target.value
-                        calcTranform(target, prop.style.transform)
+                        this._renderProp(target, prop, true);
                       }
                     },
                     parent: label
@@ -489,7 +505,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
                     on: {
                       input: (e) => {
                         prop.style.transform[t] = -1 * e.target.value
-                        calcTranform(target, prop.style.transform)
+                        this._renderProp(target, prop, true);
                       }
                     },
                     parent: label

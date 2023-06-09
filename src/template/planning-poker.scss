@@ -1,0 +1,101 @@
+card[data-template="planning-poker"] {
+
+  front {
+    [data-prop="point"] {
+      color: #000;
+      top: 50%;
+      left: 50%;
+      z-index: 0;
+      transform: translate(-50%, -50%) scaleX(.8);
+      font-size: 7.5em;
+    }
+    [data-prop="corner1"],
+    [data-prop="corner2"] {
+      color: #000;
+      font-size: 2em;
+    }
+    [data-prop="corner1"] {
+      top: 2em;
+      left: 3em;
+      transform: scaleX(.8);
+      transform-origin: 0 0;
+    }
+    [data-prop="corner2"] {
+      bottom: 2em;
+      right: 3em;
+      transform: translate(-80%, -100%) rotate(180deg) scaleX(.8);
+      transform-origin: 100% 100%;
+    }
+
+    [data-prop="icon"] {
+      top: 50%;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      display: none;
+    }
+    [data-prop="icorner1"],
+    [data-prop="icorner2"] {
+      width: 15em;
+      height: 15em;
+      display: none;
+    }
+    [data-prop="icorner1"] img,
+    [data-prop="icorner2"] img {
+      position: absolute;
+      width: 100%!important;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    [data-prop="icorner1"] {
+      top: 3em;
+      left: 3em;
+    }
+    [data-prop="icorner2"] {
+      bottom: 3em;
+      right: 3em;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+card[data-template="planning-poker"][data-alt="icon"] {
+  front [data-prop="point"],
+  front [data-prop="corner1"],
+  front [data-prop="corner2"] {
+    display: none;
+  }
+  front [data-prop="icorner1"],
+  front [data-prop="icorner2"],
+  front [data-prop="icon"] {
+    display: block;
+  }
+}
+
+card[data-template="planning-poker"] back {
+  [data-prop="logo"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+  }
+  [data-prop="logo"][data-alt="circle"] {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  [data-prop="logo"][data-alt="hidden"] {
+    display: none;
+  }
+
+  [data-prop="deck"] {
+    top: calc(50% + 20em);
+    left: 50%;
+    line-height: 5em;
+    padding: 0 .5em;
+    border-radius: .5em;;
+    text-align: center;
+    z-index: 2;
+  }
+}
