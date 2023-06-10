@@ -15,3 +15,5 @@
 
 use a color picker ? https://github.com/Simonwep/pickr    
 use circle type ? https://github.com/peterhry/circletype
+
+hexagonal cards: https://la-cascade.io/articles/grille-css-et-formes-personnalisees-1
