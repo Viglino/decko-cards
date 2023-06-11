@@ -151,9 +151,9 @@ Card.prototype.render = function() {
   this.element.style.color = this.style.borderColor || '#fff';
   this.borderElt.style.color = this.style.borderColor || '#fff';
   // Back style
-  this.backBorder.style.backgroundColor = this.style.backColor || '#fff';
+  this.backElt.style.backgroundColor = this.style.backColor || '#fff';
   this.backElt.style.color  = this.backBorder.style.color = this.style.hatchColor || '#fff';
-  this.backBorder.dataset.hatch = this.style.hach
+  this.backElt.dataset.hatch = this.style.hach
   // Card properties
   this.renderProp(this.properties)
   this.renderProp(this.back)
@@ -296,18 +296,19 @@ Card.prototype.getForm = function(elt) {
 
   const hach = element.create('SELECT', { 
     change: () => {
-      this.backBorder.dataset.hatch = this.style.hach = hach.value
+      this.backElt.dataset.hatch = this.style.hach = hach.value
     },
     parent: liback 
   });
   ['solid', 'hatch', 'cross'].forEach(s => {
-    element.create('OPTION', { value: s, html: _T(s), parent: hach })
+    const opt = element.create('OPTION', { value: s, html: _T(s), parent: hach })
+    if (s === this.style.hach) opt.selected = true
   })
   
   //   
   element.create('INPUT', {
     type: 'color',
-    value: this.style.backColor || '#ffffff',
+    value: this.style.hatchColor || '#ffffff',
     change: (e) => {
       this.style.hatchColor = e.target.value || '#ffffff'
       this.backElt.style.color = this.backBorder.style.color = this.style.hatchColor || '#fff';
@@ -319,7 +320,8 @@ Card.prototype.getForm = function(elt) {
     value: this.style.backColor || '#ffffff',
     change: (e) => {
       this.style.backColor = e.target.value || '#ffffff'
-      this.backBorder.style.backgroundColor = this.style.backColor || '#fff';
+//      this.backBorder.style.backgroundColor = this.style.backColor || '#fff';
+      this.backElt.style.backgroundColor = this.style.backColor || '#fff';
     },
     parent: liback
   })

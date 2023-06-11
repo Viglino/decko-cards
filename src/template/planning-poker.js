@@ -8,7 +8,8 @@ export default {
       type: 'text',
       default: '',
       related: ['corner1', 'corner2'],
-      style: {}
+      style: {
+      }
     },
     icon: {
       type: 'image',

@@ -62,10 +62,12 @@ card > * > .border {
 card.noBorder > front > .border {
   display: none;
 }
-card > back > .border {
-  background-color: currentColor;
-  z-index: 0;
+card > front,
+card > back  {
+  position: absolute;
+  inset: 0;
 }
+
 card.noBorder > back > .border {
   border: 0;
   box-shadow: unset;
