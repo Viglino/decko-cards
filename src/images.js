@@ -92,18 +92,6 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
-    "title": "cartoviz",
-    "file": "cartoviz.svg",
-    "path": "./img/accessories/",
-    "keywords": [
-      "accessories",
-      "cartoviz"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
     "title": "chemist-flask-",
     "file": "chemist-flask-.svg",
     "path": "./img/accessories/",
@@ -458,6 +446,32 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "map-poi",
+    "file": "map-poi.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "map",
+      "poi"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "map-poster",
+    "file": "map-poster.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "map",
+      "poster"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "map-world",
     "file": "map-world.svg",
     "path": "./img/accessories/",
@@ -670,6 +684,20 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "sword-zorro - Copie",
+    "file": "sword-zorro - Copie.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "sword",
+      "zorro ",
+      " Copie"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "sword-zorro",
     "file": "sword-zorro.svg",
     "path": "./img/accessories/",
@@ -741,6 +769,20 @@ export default [
       "accessories",
       "west",
       "revolver"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "west-sheriff-star",
+    "file": "west-sheriff-star.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "west",
+      "sheriff",
+      "star"
     ]
   },
   {
