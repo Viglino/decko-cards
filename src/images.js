@@ -670,6 +670,19 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "sword-zorro",
+    "file": "sword-zorro.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "sword",
+      "zorro"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "thermometer",
     "file": "thermometer.svg",
     "path": "./img/accessories/",
@@ -721,13 +734,26 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
-    "title": "word-zorro",
-    "file": "word-zorro.svg",
+    "title": "west-revolver",
+    "file": "west-revolver.svg",
     "path": "./img/accessories/",
     "keywords": [
       "accessories",
-      "word",
-      "zorro"
+      "west",
+      "revolver"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "west-winchester",
+    "file": "west-winchester.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "west",
+      "winchester"
     ]
   },
   {
@@ -1994,6 +2020,19 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "bruce-lee",
+    "file": "bruce-lee.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "bruce",
+      "lee"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "china-girl",
     "file": "china-girl.svg",
     "path": "./img/people/",
@@ -2026,6 +2065,18 @@ export default [
     "keywords": [
       "people",
       "clerk"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "clown",
+    "file": "clown.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "clown"
     ]
   },
   {
@@ -2692,6 +2743,48 @@ export default [
     "keywords": [
       "people",
       "stepmother"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "west-gbu-thebad",
+    "file": "west-gbu-thebad.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "west",
+      "gbu",
+      "thebad"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "west-gbu-thegood",
+    "file": "west-gbu-thegood.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "west",
+      "gbu",
+      "thegood"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "west-gbu-theugly",
+    "file": "west-gbu-theugly.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "west",
+      "gbu",
+      "theugly"
     ]
   },
   {
