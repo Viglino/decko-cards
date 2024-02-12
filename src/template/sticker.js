@@ -3,7 +3,6 @@ export default {
   description: 'badgeDesc',
   className: 'noBorder',
   format: 'visit',
-  alt: [ 'sticker', 'badge'],
   style: {
     borderColor: '#67a1b7'
   },

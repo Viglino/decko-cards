@@ -71,6 +71,7 @@ main {
   top: .5em;
   left: 1.5em;
   width: 4.5em;
+  z-index: 1;
 }
 
 #cards ul {
@@ -238,7 +239,7 @@ footer {
   white-space: nowrap;
   overflow-x: auto;
   padding: 1em;
-  margin: -1em;
+  margin: -1em 0 0;
 }
 [data-role="dialog"].choice .dialogInfo {
   height: 2em;
@@ -246,6 +247,17 @@ footer {
   background-color: #eee;
   text-align: center;
   margin: 0 -1em;
+}
+[data-role="dialog"].choice select {
+  position: absolute;
+  z-index: 1;
+  width: 1.6em;
+  line-height: 1.6em;
+  margin: 0.8em;
+  border: 2px solid #999;
+  border-radius: 50%;
+  right: 0;
+  box-shadow: 1px 1px 5px #999;
 }
 
 [data-role="dialog"].choice .file {

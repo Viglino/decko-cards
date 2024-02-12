@@ -144,6 +144,18 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "coffee",
+    "file": "coffee.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "coffee"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "compass",
     "file": "compass.svg",
     "path": "./img/accessories/",
@@ -678,20 +690,6 @@ export default [
       "accessories",
       "sport",
       "bottl"
-    ]
-  },
-  {
-    "author": "Viglino",
-    "url": "https://github.com/Viglino/decko-cards",
-    "copy": "CC-by-SA",
-    "title": "sword-zorro - Copie",
-    "file": "sword-zorro - Copie.svg",
-    "path": "./img/accessories/",
-    "keywords": [
-      "accessories",
-      "sword",
-      "zorro ",
-      " Copie"
     ]
   },
   {
