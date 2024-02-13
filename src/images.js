@@ -80,6 +80,19 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "camera-vintage",
+    "file": "camera-vintage.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "camera",
+      "vintage"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "camera",
     "file": "camera.svg",
     "path": "./img/accessories/",
@@ -2173,6 +2186,19 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "bad-boy",
+    "file": "bad-boy.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "bad",
+      "boy"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "bald-beard",
     "file": "bald-beard.svg",
     "path": "./img/people/",
@@ -2180,6 +2206,19 @@ export default [
       "people",
       "bald",
       "beard"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "boy-bangs",
+    "file": "boy-bangs.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "boy",
+      "bangs"
     ]
   },
   {
