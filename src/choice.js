@@ -42,18 +42,23 @@ const examples = element.create('SELECT', {
   parent: file
 })
 element.create('OPTION', {
+  value: './cards/geovis-party.card',
+  text: '🃏 Géovis party',
+  parent: examples
+})
+element.create('OPTION', {
   value: './cards/sticker-geovis.card',
-  text: 'Stickers Géoviz',
+  text: '🏷️ Stickers Géoviz',
   parent: examples
 })
 element.create('OPTION', {
   value: './cards/badge-geovis.card',
-  text: 'Badges Géoviz',
+  text: '🌐 Badges Géoviz',
   parent: examples
 })
 element.create('OPTION', {
   value: './cards/planning.card',
-  text: 'Planning poker',
+  text: '🃁 Planning poker',
   parent: examples
 })
 examples.value = '';

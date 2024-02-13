@@ -195,7 +195,7 @@ Deck.prototype.selectCard = function(c) {
   element.create('BUTTON', {
     html: _T('save'),
     className: 'save',
-    click: () => { this.save() },
+    click: e => { this.save(e.ctrlKey) },
     parent: cardElt
   })
   
@@ -203,14 +203,15 @@ Deck.prototype.selectCard = function(c) {
 }
 
 /** Save the deck */
-Deck.prototype.save = function() {
+Deck.prototype.save = function(pretty) {
   const save = {
     template: this.template,
     cards: []
   };
   this.cards.forEach(c => save.cards.push(JSON.parse(c.card.export())))
-  var blob = new Blob([JSON.stringify(save)], {type: "text/plain;charset=utf-8"});
+  var blob = new Blob([JSON.stringify(save, null, pretty ? ' ' : null)], {type: "text/plain;charset=utf-8"});
   saveAs(blob, "card.card");
+  console.log('save')
 }
 
 export default Deck

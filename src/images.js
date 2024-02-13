@@ -92,6 +92,43 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "case",
+    "file": "case.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "case"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "check-gold",
+    "file": "check-gold.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "check",
+      "gold"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "check",
+    "file": "check.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "check"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "chemist-flask-",
     "file": "chemist-flask-.svg",
     "path": "./img/accessories/",
@@ -138,6 +175,19 @@ export default [
       "accessories",
       "chemist",
       "tube"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "code-matrix",
+    "file": "code-matrix.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "code",
+      "matrix"
     ]
   },
   {
@@ -432,6 +482,30 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "headphone",
+    "file": "headphone.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "headphone"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "inkwell",
+    "file": "inkwell.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "inkwell"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "knife-spades",
     "file": "knife-spades.svg",
     "path": "./img/accessories/",
@@ -497,12 +571,37 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "mic",
+    "file": "mic.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "mic"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "molecule",
     "file": "molecule.svg",
     "path": "./img/accessories/",
     "keywords": [
       "accessories",
       "molecule"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "music-note",
+    "file": "music-note.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "music",
+      "note"
     ]
   },
   {
@@ -542,6 +641,18 @@ export default [
       "accessories",
       "ninja",
       "sword"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "notes",
+    "file": "notes.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "notes"
     ]
   },
   {
@@ -634,6 +745,19 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "scrum-table",
+    "file": "scrum-table.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "scrum",
+      "table"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "slide",
     "file": "slide.svg",
     "path": "./img/accessories/",
@@ -671,12 +795,76 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "sound-system",
+    "file": "sound-system.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "sound",
+      "system"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "spade",
     "file": "spade.svg",
     "path": "./img/accessories/",
     "keywords": [
       "accessories",
       "spade"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "speech-code",
+    "file": "speech-code.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "speech",
+      "code"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "speech-heart",
+    "file": "speech-heart.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "speech",
+      "heart"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "speech-info",
+    "file": "speech-info.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "speech",
+      "info"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "speech",
+    "file": "speech.svg",
+    "path": "./img/accessories/",
+    "keywords": [
+      "accessories",
+      "speech"
     ]
   },
   {
@@ -2488,6 +2676,18 @@ export default [
     "keywords": [
       "people",
       "joker"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "journalist",
+    "file": "journalist.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "journalist"
     ]
   },
   {

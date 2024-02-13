@@ -128,7 +128,7 @@ main {
 }
 
 #cards card {
-  font-size: 1px;
+  font-size: 0.95px;
   touch-action: none;
 }
 #cards[data-size="1"] card {

@@ -353,7 +353,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
     switch (prop.type) {
       case 'text': 
       case 'textarea': {
-        element.create(prop.type==='textarea' ? 'TEXTAREA' : 'INPUT', {
+        const txtElt = element.create(prop.type==='textarea' ? 'TEXTAREA' : 'INPUT', {
           value: prop.value || '',
           placeholder: _T(p),
           type: 'text',
@@ -365,6 +365,9 @@ Card.prototype.getFromProperties = function(properties, elt) {
           },
           parent: li
         })
+        if (prop.type==='textarea') {
+          txtElt.innerText = prop.value;
+        }
         break;
       }
       case 'image': {
