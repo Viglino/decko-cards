@@ -2733,6 +2733,19 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "man-suit",
+    "file": "man-suit.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "man",
+      "suit"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "merlin",
     "file": "merlin.svg",
     "path": "./img/people/",
