@@ -90,74 +90,73 @@
      inkscape:groupmode="layer"
      inkscape:label="Calque 1">
     <g
-       id="g942"
-       transform="translate(0.26458391,0.97877692)">
-      <g
-         transform="translate(0,-27.516678)"
-         id="g874">
-        <circle
-           style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
-           id="path839"
-           cx="124.69243"
-           cy="103.13702"
-           r="14.054543" />
-        <circle
-           r="7.6780233"
-           cy="101.92781"
-           cx="126.21391"
-           id="path839-9"
-           style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
-        <circle
-           style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:0.31389;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
-           id="path839-9-5"
-           cx="127.68883"
-           cy="100.41457"
-           r="2.9708123" />
-      </g>
-      <g
-         transform="translate(26.836661,8.9958367)"
-         id="g874-5">
-        <circle
-           r="14.054543"
-           cy="103.13702"
-           cx="124.69243"
-           id="path839-1"
-           style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
-        <circle
-           style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
-           id="path839-9-7"
-           cx="126.21391"
-           cy="101.92781"
-           r="7.6780233" />
-        <circle
-           r="2.9708123"
-           cy="100.41457"
-           cx="127.68883"
-           id="path839-9-5-1"
-           style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:0.31389;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
-      </g>
-      <g
-         transform="translate(-27.365836,8.9958367)"
-         id="g874-8">
-        <circle
-           r="14.054543"
-           cy="103.13702"
-           cx="124.69243"
-           id="path839-96"
-           style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
-        <circle
-           style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
-           id="path839-9-77"
-           cx="126.21391"
-           cy="101.92781"
-           r="7.6780233" />
-        <circle
-           r="2.9708123"
-           cy="100.41457"
-           cx="127.68883"
-           id="path839-9-5-9"
-           style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:0.31389;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
-      </g>
+       style="stroke:none"
+       id="g874"
+       transform="translate(0.26458391,-26.537901)">
+      <circle
+         r="14.054543"
+         cy="103.13702"
+         cx="124.69243"
+         id="path839"
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
+      <circle
+         style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+         id="path839-9"
+         cx="126.21391"
+         cy="101.92781"
+         r="7.6780233" />
+      <circle
+         r="2.9708123"
+         cy="100.41457"
+         cx="127.68883"
+         id="path839-9-5"
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:0.31389;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
+    </g>
+    <g
+       style="stroke:none"
+       id="g874-5"
+       transform="translate(27.101245,2.0371131)">
+      <circle
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         id="path839-1"
+         cx="124.69243"
+         cy="103.13702"
+         r="14.054543" />
+      <circle
+         r="7.6780233"
+         cy="101.92781"
+         cx="126.21391"
+         id="path839-9-7"
+         style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
+      <circle
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:0.31389;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+         id="path839-9-5-1"
+         cx="127.68883"
+         cy="100.41457"
+         r="2.9708123" />
+    </g>
+    <g
+       style="stroke:none"
+       id="g874-8"
+       transform="translate(-27.101252,2.0371131)">
+      <circle
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         id="path839-96"
+         cx="124.69243"
+         cy="103.13702"
+         r="14.054543" />
+      <circle
+         r="7.6780233"
+         cy="101.92781"
+         cx="126.21391"
+         id="path839-9-77"
+         style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
+      <circle
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:0.31389;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+         id="path839-9-5-9"
+         cx="127.68883"
+         cy="100.41457"
+         r="2.9708123" />
     </g>
   </g>
 </svg>

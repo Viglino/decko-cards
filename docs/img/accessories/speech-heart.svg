@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="150mm"
+   height="150mm"
+   viewBox="0 0 150 150"
+   version="1.1"
+   id="svg3147"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="speech-heart.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs3141" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="211.24815"
+     inkscape:cy="272.23611"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1000"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0" />
+  <metadata
+     id="metadata3144">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect134973"
+       style="mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       d="m 61.44708,50.813468 c -3.160712,-3e-6 -5.705594,2.544363 -5.705594,5.705078 v 25.922446 c 0,3.160715 2.544882,5.705596 5.705594,5.705596 h 4.566647 V 99.186745 L 76.993936,88.146588 c 0,0 9.519126,0 11.5595,0 3.160715,0 5.705078,-2.544881 5.705078,-5.705596 V 56.518546 c 0,-3.160715 -2.544363,-5.705078 -5.705078,-5.705078 z"
+       sodipodi:nodetypes="csssccccsssc" />
+    <path
+       d="m 74.889344,63.463012 c 1.522354,-1.586973 2.588573,-2.959183 4.933872,-3.227163 4.403614,-0.505551 8.453723,4.002594 6.23006,8.440419 -0.632889,1.263877 -1.921473,2.767226 -3.346898,4.242067 -1.564168,1.619282 -3.295585,3.206256 -4.508146,4.409316 l -3.306987,3.280379 -2.733016,-2.630385 c -3.287982,-3.166346 -8.649481,-7.151835 -8.826234,-12.089509 -0.123537,-3.459032 2.605677,-5.675094 5.745415,-5.635182 2.805236,0.03802 3.985489,1.433027 5.811934,3.210058 z"
+       style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:round"
+       id="path1103" />
+  </g>
+  <style
+     type="text/css"
+     id="style933">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+</svg>

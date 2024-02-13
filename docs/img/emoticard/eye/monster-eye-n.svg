@@ -91,13 +91,14 @@
      inkscape:label="Calque 1">
     <g
        id="g874"
-       transform="translate(-12.822024,-50.154298)">
+       transform="translate(-12.822024,-50.154298)"
+       style="stroke:none">
       <circle
          r="14.054543"
          cy="103.13702"
          cx="124.69243"
          id="path839"
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
       <circle
          style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
          id="path839-9"
@@ -113,9 +114,10 @@
     </g>
     <g
        id="g874-5"
-       transform="translate(34.751609,3.4000264)">
+       transform="translate(34.751609,3.4000264)"
+       style="stroke:none">
       <circle
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
          id="path839-1"
          cx="124.69243"
          cy="103.13702"
@@ -135,9 +137,10 @@
     </g>
     <g
        id="g874-8"
-       transform="translate(-48.899474,-17.84335)">
+       transform="translate(-48.899474,-17.84335)"
+       style="stroke:none">
       <circle
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
          id="path839-96"
          cx="124.69243"
          cy="103.13702"
@@ -157,15 +160,16 @@
     </g>
     <g
        id="g842"
-       transform="matrix(0.71431233,0,0,0.71431233,31.425935,34.878075)"
+       transform="matrix(0.71431233,0,0,0.71431233,32.484269,33.290574)"
        inkscape:transform-center-x="-21.616177"
-       inkscape:transform-center-y="49.37028">
+       inkscape:transform-center-y="49.37028"
+       style="stroke:none">
       <circle
          r="28.393524"
          cy="103.13702"
          cx="124.69243"
          id="path839-0"
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:4.19984;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.19984;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
       <circle
          style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:1.36584;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
          id="path839-9-8"
@@ -183,9 +187,10 @@
        inkscape:transform-center-y="49.37028"
        inkscape:transform-center-x="-21.616176"
        transform="matrix(0.71431234,0,0,0.71431234,60.225604,-6.483659)"
-       id="g842-3">
+       id="g842-3"
+       style="stroke:none">
       <circle
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:4.19984;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.19984;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
          id="path839-0-7"
          cx="124.69243"
          cy="103.13702"
@@ -205,9 +210,10 @@
     </g>
     <g
        transform="matrix(0.67730884,0,0,0.67730884,18.706108,8.7542551)"
-       id="g874-58">
+       id="g874-58"
+       style="stroke:none">
       <circle
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
          id="path839-2"
          cx="124.69243"
          cy="103.13702"
@@ -227,13 +233,14 @@
     </g>
     <g
        id="g874-58-5"
-       transform="matrix(0.67730883,0,0,0.67730883,-0.85260998,-13.438028)">
+       transform="matrix(0.67730883,0,0,0.67730883,-18.28812,63.172545)"
+       style="stroke:none">
       <circle
          r="14.054543"
          cy="103.13702"
          cx="124.69243"
          id="path839-2-6"
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
       <circle
          style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
          id="path839-9-9-7"
@@ -249,13 +256,14 @@
     </g>
     <g
        id="g874-58-0"
-       transform="matrix(0.67730883,0,0,0.67730883,2.589836,43.095291)">
+       transform="matrix(0.67730883,0,0,0.67730883,2.589836,43.095291)"
+       style="stroke:none">
       <circle
          r="14.054543"
          cy="103.13702"
          cx="124.69243"
          id="path839-2-9"
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
       <circle
          style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
          id="path839-9-9-8"
@@ -271,13 +279,14 @@
     </g>
     <g
        id="g874-58-3"
-       transform="matrix(0.67730883,0,0,0.67730883,103.77108,38.075977)">
+       transform="matrix(0.67730883,0,0,0.67730883,103.77108,38.075977)"
+       style="stroke:none">
       <circle
          r="14.054543"
          cy="103.13702"
          cx="124.69243"
          id="path839-2-7"
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
       <circle
          style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
          id="path839-9-9-1"
@@ -293,13 +302,14 @@
     </g>
     <g
        id="g874-58-8"
-       transform="matrix(0.67730883,0,0,0.67730883,-23.03426,40.189372)">
+       transform="matrix(0.67730883,0,0,0.67730883,-23.03426,40.189372)"
+       style="stroke:none">
       <circle
          r="14.054543"
          cy="103.13702"
          cx="124.69243"
          id="path839-2-8"
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
       <circle
          style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
          id="path839-9-9-6"
@@ -315,13 +325,14 @@
     </g>
     <g
        id="g874-58-57"
-       transform="matrix(0.67730883,0,0,0.67730883,95.845858,14.036108)">
+       transform="matrix(0.67730883,0,0,0.67730883,95.845858,14.036108)"
+       style="stroke:none">
       <circle
          r="14.054543"
          cy="103.13702"
          cx="124.69243"
          id="path839-2-83"
-         style="color:#000000;overflow:visible;fill:#ffffff;stroke:#000000;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
       <circle
          style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
          id="path839-9-9-9"
@@ -334,6 +345,29 @@
          cx="127.68883"
          id="path839-9-5-2-63"
          style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:0.31389;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
+    </g>
+    <g
+       style="stroke:none"
+       transform="matrix(0.67730883,0,0,0.67730883,89.929092,58.682398)"
+       id="g874-58-5-0">
+      <circle
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:4.42929;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         id="path839-2-6-4"
+         cx="124.69243"
+         cy="103.13702"
+         r="14.054543" />
+      <circle
+         r="7.6780233"
+         cy="101.92781"
+         cx="126.21391"
+         id="path839-9-9-7-6"
+         style="color:#000000;overflow:visible;fill:#000000;stroke:none;stroke-width:0.811244;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
+      <circle
+         style="color:#000000;overflow:visible;fill:#ffffff;stroke:none;stroke-width:0.31389;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+         id="path839-9-5-2-6-1"
+         cx="127.68883"
+         cy="100.41457"
+         r="2.9708123" />
     </g>
   </g>
 </svg>
