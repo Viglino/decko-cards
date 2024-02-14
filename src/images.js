@@ -380,12 +380,12 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
-    "title": "fatasy-axe",
-    "file": "fatasy-axe.svg",
+    "title": "fantasy-axe",
+    "file": "fantasy-axe.svg",
     "path": "./img/accessories/",
     "keywords": [
       "accessories",
-      "fatasy",
+      "fantasy",
       "axe"
     ]
   },
@@ -393,12 +393,12 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
-    "title": "fatasy-hammer",
-    "file": "fatasy-hammer.svg",
+    "title": "fantasy-hammer",
+    "file": "fantasy-hammer.svg",
     "path": "./img/accessories/",
     "keywords": [
       "accessories",
-      "fatasy",
+      "fantasy",
       "hammer"
     ]
   },
@@ -406,12 +406,12 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
-    "title": "fatasy-map",
-    "file": "fatasy-map.svg",
+    "title": "fantasy-map",
+    "file": "fantasy-map.svg",
     "path": "./img/accessories/",
     "keywords": [
       "accessories",
-      "fatasy",
+      "fantasy",
       "map"
     ]
   },

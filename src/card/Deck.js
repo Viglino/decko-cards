@@ -4,6 +4,7 @@ import _T from '../i18n/i18n'
 import Card from "./Card";
 import 'iconicss/icss.css'
 import 'iconicss/css/search.css'
+import 'iconicss/css/bring2back.css'
 
 const cardElt = document.getElementById('card');
 const formElt = document.getElementById('form');
@@ -31,7 +32,11 @@ class Deck {
       parent: menu 
     })
     element.create('I', { 
-      className: 'icss icss-search',
+      className: 'icss icss-bring2back',
+      title: _T('flip cards'),
+      click: () => {
+        menu.dataset.face = menu.dataset.face === 'back' ? 'front' : 'back';
+      },
       parent: menu
     })
     element.create('INPUT', { 

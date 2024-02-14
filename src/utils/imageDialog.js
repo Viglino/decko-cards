@@ -4,11 +4,15 @@ import images from '../images'
 import element from "./element";
 import _T from "../i18n/i18n";
 
-
+/** Dialog for image selection
+ * @param {*} [current] current image
+ * @param {function} fn callback
+ */
 function imageDialog(current, fn) {
   const content = element.create('DIV')
   const imgelt = []
-  function showPath(d) {
+  function selectImg(d) {
+    // Get path
     if (d) {
       d = d.split('/')
       d.pop()
@@ -16,18 +20,35 @@ function imageDialog(current, fn) {
       if (path[d]) dir.value = d;
     }
     d = dir.value;
+    // Get search
+    const rex = new RegExp(searchInput.value, 'i');
     imgelt.forEach(i => {
-      if (!d || i.dataset.path === d) {
+      if ((!d || i.dataset.path === d) && (rex.test(i.title+' '+i.dataset.path))) {
         i.className = 'visible'
       } else {
         i.className = 'hidden'
       }
     })
   }
+  //
+  const searchDiv = element.create('DIV', { className: 'icons', parent: content })
+  // Select by theme
   const dir = element.create('SELECT', { 
-    change: () => showPath(),
-    parent: element.create('DIV', { className: 'icons', parent: content })
+    change: () => selectImg(),
+    parent: searchDiv
   })
+  // Search by name
+  const searchInput = element.create('INPUT', {
+    type: 'search', 
+    placeholder: _T('search image'),
+    on: { 
+      keyup: () => selectImg(),
+      search: () => selectImg(),
+    },
+    parent: searchDiv
+  })
+
+  // Icon list
   const path = {};
   images.forEach(img => {
     const d = img.path.replace('./img/', '').replace(/\/$/, '')
@@ -56,7 +77,7 @@ function imageDialog(current, fn) {
     })
   })
   const d = current.replace('./img/', '') // .replace(/\/$/, '')
-  showPath(d)
+  selectImg(d)
   dialog.show({
     title: _T('images'),
     html: content,
