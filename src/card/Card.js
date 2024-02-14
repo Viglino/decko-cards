@@ -366,7 +366,7 @@ Card.prototype.getFromProperties = function(properties, elt) {
           parent: li
         })
         if (prop.type==='textarea') {
-          txtElt.innerText = prop.value;
+          txtElt.innerText = prop.value || '';
         }
         break;
       }
