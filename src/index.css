@@ -5,6 +5,10 @@ body {
   user-select: none;
 }
 
+a.icss-github-corner {
+  z-index: 1001;
+}
+
 header {
   position: fixed;
   top: 0;
