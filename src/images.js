@@ -1001,6 +1001,18 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "corgi",
+    "file": "corgi.svg",
+    "path": "./img/animal/",
+    "keywords": [
+      "animal",
+      "corgi"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "alien",
     "file": "alien.svg",
     "path": "./img/emoticard/eye/",
@@ -2388,6 +2400,19 @@ export default [
     "author": "Viglino",
     "url": "https://github.com/Viglino/decko-cards",
     "copy": "CC-by-SA",
+    "title": "cycle-girl",
+    "file": "cycle-girl.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "cycle",
+      "girl"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
     "title": "delivery",
     "file": "delivery.svg",
     "path": "./img/people/",
@@ -2642,6 +2667,19 @@ export default [
     "keywords": [
       "people",
       "girl"
+    ]
+  },
+  {
+    "author": "Viglino",
+    "url": "https://github.com/Viglino/decko-cards",
+    "copy": "CC-by-SA",
+    "title": "good-boy",
+    "file": "good-boy.svg",
+    "path": "./img/people/",
+    "keywords": [
+      "people",
+      "good",
+      "boy"
     ]
   },
   {
